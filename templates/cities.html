@@ -1,0 +1,484 @@
+{% extends "tourbaseen.html" %}
+{% load cms_tags staticfiles%}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+	<div class="wrapper">
+		<!--=== Header ===-->
+		<div class="header">
+			<div class="container">
+				<div class="col-md-4" >
+					<!-- Logo -->
+					<a class="logo" href="/">
+						<img src="{% static "img/logo_turkuaz.png"%}" height="60" width="100" alt="Logo">
+					</a>
+					<!-- End Logo -->
+				</div>
+
+
+				<!-- Topbar -->
+				{% include 'topbar.html' %}
+				<!-- End Topbar -->
+
+				<!-- Toggle get grouped for better mobile display -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<!-- End Toggle -->
+			</div><!--/end container-->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<!-- Home -->
+						<li class="headline ">
+							<a href="/bosnia-tours">
+								BOSNA TURLARI
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Pages -->
+						<li class="headline">
+							<a href="/balkan-tours" >
+								BALKAN TURLARI
+							</a>
+						</li>
+						<!-- End Pages -->
+
+						<!-- Portfolio -->
+						<li class="headline">
+							<a href="/alternatives" >
+								ALTERNATİF TURLAR
+							</a>
+						</li>
+						<!-- End Portfolio -->
+
+						<!-- Home -->
+						<li class="headline active">
+							<a href="/cities">
+								ŞEHİRLER
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Features -->
+						<li class="headline">
+							<a href="/rentacar">
+								ARAÇ KİRALAMA
+							</a>
+						</li>
+						<!-- End Features -->
+					</ul>
+				</div><!--/end container-->
+			</div>
+			<!--/navbar-collapse-->
+
+		</div>
+		<!--=== End Header ===-->
+
+		<!--=== Breadcrumbs ===-->
+		<div class="breadcrumbs">
+			<div class="container">
+				<h1 class="pull-left">ŞEHİRLER HAKKINDA</h1>
+				<ul class="pull-right breadcrumb">
+					<li><a href="/">Ana Sayfa</a></li>
+					<li>Şehirler</li>
+					<li class="active">Bosna Hersek Şehirleri</li>
+				</ul>
+			</div>
+		</div><!--/breadcrumbs-->
+		<!--=== End Breadcrumbs ===-->
+		<!-- Bosna Tours 2 Section -->
+		<div class="popular-tours text-center g-heading-v8 g-pt-40 g-pb-20" id="Popular-Tours">
+			<div class="container">
+				{% include 'topsocialbar.html'%}
+
+				<div class="row text-center">
+					<!-- Item 3 -->
+					<div class="col-md-4 col-xs-6 col-2xs-12 col-md-offset-2">
+						<div class="popular-tours-item">
+							<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/cities/tinytabs/mostar.jpg"%}" alt="ALT" class="img-responsive"></div>
+							<div class="popular-tours-item-info">
+								<div class="popular-tours-item-info-inner">
+									<h3>BOSNA HERSEK</h3>
+								</div>
+							</div>
+							<a href="/cities" class="popular-tours-item__more"></a>
+						</div>
+					</div>
+					<!-- End Item 3 -->
+					<!-- Item 4 -->
+					<div class="col-md-4 col-xs-6 col-2xs-12 ">
+						<div class="popular-tours-item">
+							<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/cities/tinytabs/dubrovnik.jpg"%}" height="100px" alt="ALT" class="img-responsive"></div>
+							<div class="popular-tours-item-info">
+								<div class="popular-tours-item-info-inner">
+									<h3>BALKANLAR</h3>
+								</div>
+							</div>
+							<a href="/cities/cities2" class="popular-tours-item__more"></a>
+						</div>
+					</div>
+					<!-- End Item 4 -->
+				</div>
+			</div>
+		</div>
+		<!-- End Bosnia Tours2 Section -->
+
+		<!--=== Content Part ===-->
+		<div class="container content">
+			<div class="row blog-page">
+				<!-- Left Sidebar -->
+				<div class="col-md-9 md-margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="sarajevo">
+						<h2>SARAYBOSNA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/sarajevo.jpg"%}" alt="" >
+						</div>
+						<div >
+							<h3></h3>
+							<p>Saraybosna, yabancıların dahi kendilerini evlerinde hisettikleri bir şehirdir. Ne coğrafi açıdan genişliğiyle ne de  büyük binalarıyla karakterize edilmiş olan kent, misafir dolu kafelerinin kültürel zenginliği ve misafirperverlik geleneğiniyle turistleri kendine çeken bir cazibeye sahiptir.<br><br>
+Kent, etrafında nefes kesici manzarasıyla uzanan sonsuz tepeler ve yükselen dağlar arasında bir anlamda sanki insanı yaşanılan zamandan koparır ve  içinde bulunulan zamana karşı direnen bir dünya kurar. Kent, bu zamandan zamandan koparan yapısına rağmen kapılarını her zaman dünyanın geri kalanına açık tutmaya da devam ediyor. Saraybosna, gündelik hayatın koşuşturmasıyla geçen bir başkent olmasına rağmen ruhuna sızan benzersiz bir ambiyansa sahiptir.
+Bu şehir, dış etkilere karşı kısmen yüzyıllarca süren mücadelesini yine  bu etkilerin Avrupa'nın en çeşitli kültürlerinden birinde emilmesiyle birlikte özetlemektedir. Nitekim dünyadaki az sayıdaki yer, birbirlerine kolayca yürünebilecek mesafede bir Ortodoks ve Katolik kilisesi, cami ve sinagog içerir. Avrupa'da, doğu ve batının bir yerde zahmetsizce durduğu  bir şehir varsa, o Saraybosna'dır. Burada, doğudan Bizans ve Osmanlı imparatorlukları ile batıdan Roma, Venedik ve Avusturya-Macaristan imparatorlukları kültür, gelenek ve inanç itibariyle silinmez izler bırakmışlardır. Saraybosna'da yapılan yürüyüş, tarihi boyunca yürümektir. Saraybosna; tatlıcıları, kafe ve el sanatları atölyeleri ile Avusturya-Macaristan'ın idari ve kültürel merkezlerine bitişik olan oryantal Osmanlı mahalleleri, her iki dünyanın da en iyilerini içinde barındırır.<br><br>
+Saraybosna'da insanların aile ve arkadaşlarına ayıracakları vakitleri vardır. Çoğu zaman burada bir insanın servetinin, maddiyatla değil, dostlukla ölçüldüğü söylenir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="mostar">
+						<h2>MOSTAR</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/mostar.jpg"%}" alt="" >
+						</div>
+						<div >
+							<h3></h3>
+							<p>Mostar köprüsü ya da Eski Köprü, 1993 yılında tank bombardımanında çöktüğü zaman Mostar sakinlerinin çoğunun kalpleri de yerinden sökülmüş gibiydi.<br><br>
+Neretva Nehrinin dibine düştükten yıllarca sonra bile köprüden bahsetmek hem kenti hem de ülkeyi bir bütün olarak simgelediği için gözyaşı döktürebilir. <br><br>
+2004 yılından beri Neretva Nehri'ni dört yüzyıl boyunca kesen güzel taş yapı, azgın sularının üstünde bir kez daha ihtişamlı bir görünüm sergiliyor. Köprü, Mostar'ın özüdür ve yeniden yapılması, Bosna-Hersek'teki bu en güzel şehirdeki, hayatın yavaş ama kesinlikle doğal bir döneme girdiği anlamına gelmektedir. 2005 yılında köprü dünya kültür mirası listesine alınmıştır.<br><br>
+Bu bölge, yer üstü ve yeraltı sularının çeşitliliğini karakterize etmektedir. Buna kaynağı Avrupa'nın en büyük ve en güzellerinden bir tanesidir.<br><br>
+Buna bir yer altı karst nehrinin en güzel örneğidir. 200m'lik bir uçurumun dibinden çıkar ve tek başına Buna Nehrini meydana getirir. Şaşırtıcı olmayan bir şekilde, Osmanlı padişahı bu manzaradan etkilenmiş ve hemen yanında bir tekkenin inşa edilmesini emretmiştir.<br><br>
+Bu 16. yüzyıldan kalma tekke, Dervişhane olarak  inşa edilmiş olup günümüzde hâlen Bosna-Hersek'in en mistik yerlerinden biridir. Tüm yıl boyunca ziyaretçilere açık olup nehrin kaynağına bakan güzel bir bahçe içerisinde soğuk içecekler, çay ve Türk kahvesi ikram edilmektedir.<br><br>
+Bölge ayrıca bitki florasının çeşitliliği ve bir dizi endemik türle de ünlüdür. Daha düşük rakımlarda, birçok yaprak dökmeyen bitki ve maki türü bulunurken, tepelerdeki yüksek rakımlarda seyrek ormanlar vardır. Bereketli ekilebilir araziler ve Akdeniz iklimi tarım için oldukça müsait bir vasat meydana getirmektedir. Bu sebeple bölge meyve bağlarıyla kaplıdır.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="travnik">
+						<h2><a href="#">TRAVNIK</a></h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/travnik.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Travnik, Laşva Nehri vadisinde yer alır ve kuzeyde Vlasiç Dağı ve güneyde Vilenitsa Dağı ile çevrelenir. İlk Slav yerleşimcileri, Travnik bölgesine gelişlerinden 500 yıl sonrasına kadar, varlıklarından geriye çok az eser bıraktılar.<br><br>
+Laşva vadisi, ilk tarihi kayıtlar açısından, tekrar 1244 yılında Macar Kralı IV. Bela’nın yaptığı önemli eserlerinden birisini Laşva'ya verdiğinde ortaya çıktı. O zamana kadar, bölge Bosna devletinin feodal bir parçası idi.<br><br>
+Bu yüzyıllardan vadide kalan kalıntılar; Roma döneminden bilinen kale ve köşklerin kendi paylarına düşen zenginliklerini göstermemektedir.<br><br>
+Travnik Kalesi o dönemin en etkileyici kalesiydi. Günümüzde ise hala diğerlerinden daha iyi korunmuş olarak ön plana çıkmaktadır. Aynı zamanda bu devir Travnik'e de adını veren devirdir.<br><br>
+Osmanlı dönemi, Travnik'in şanını da ona iade etti. Osmanlı İmparatorluğunun başşehri ve askeri merkeziydi. Buradan Osmanlılar fetihlerini güneybatıya doğru ilerletmeyi planlıyorlardı. Osmanlılar şehre camiler, medreseler, yollar ve su şebekeleri getirdiler. Ortaçağdan kalma kaleyi güçlendirdiler ve kalenin yüksek taş duvarları içinde mini bir şehir inşa ettiler. <br><br>
+150 yıldan uzun bir süredir Bosna beyinin, Osmanlı Padişahı'nın Bosna'daki temsilcisi -  Bosnadaki merkezi bu şehirdi ve hem yabancılar hem de ticaret için bir cazibe merkezi haline gelmişti. Bu dönemde Travnik'i ziyaret eden seyyahlar şehirden etkilenmişler ve onu Avrupai İstanbul ve Bosna'nın en oryantal kasabası olarak nitelendirmişlerdir. Ivo Andrić'in meşhur 'Travnik Kroniği' bize bu dönemle alakalı oldukça fikir vermektedir.<br><br></p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="visegrad">
+						<h2><a href="#"></a>VİŞEGRAD</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/visegrad.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Bu bölgedeki en eski yaşam izleri İliryalılar döneminde (İ.Ö 1500), İllik kavimleri Otariatlar ve Ardiler'in yerleşimininden kalmadır. Kalıntıları Vişegrad yakınlarında bir yerde bulundu. Daha sonra bu bölge "Malavico" adıyla Roma Eyaleti'nin bir parçası haline geldi.<br><br>
+"Via Drina" adı verilen yol Drina nehri vadisini boydan boya geçiyordu ve o sırada Alman madencileri Saselerin de gelmesiyle bugün Višegrad'ın bir kısmı Sase olarak adlandırılmaktadır.<br><br>
+Constantinus I ve II olarak adlandırılan Roma sikkeleri, Višegrad nehri üzerinde bulunan Zupa'da keşfedilmiştir. Ayrıca VI. ve VII. yüzyıllardan kalma Slovenik seramik kalıntıları, Saraybosna'daki Doğa Bilimleri Müzesi tarafından 1966 yılında Mušići köyünde yapılan araştırmalar sırasında bulunmuştur. Bu kazı, Slovenların bölgeye yerleşimlerinin bir kanıtı oldu. Sayısız ortaçağ Stećak yerleşim yerlerinden en ünlüleri Velika ve Mala Gostilja olan yakınlardaki Višegrad’dı.<br><br>
+Vişegrad coğrafi, stratejik ve ekonomik konumu nedeniyle çok hareketli bir geçmişe sahip olup tarihte bir çok kez orduların hedefi   olmuştur. Stefan Nemanja zamanında bütün bölge Sırp Nemanjići ülkesinin bir parçası haline gelmişti. 14. yüzyılın ortalarında Sırp kumandan Nikola Altomanoviç'in kontrolü altındaydı. Daha sonra bölge, Bosnalı Kral Tvrtko tarafından yönetildi ve Bosna Krallığı'na katıldı.<br><br>
+Vişegrad'la ilgili ilk kayıtlar 1433'te Orta çağ şehri Dobrun'un güçlü Pavloviç hanedanı zamanından kalmadır. Tepenin üstünde ve hemen Drina köprüsünün yakınında eski şehrin izlerini ya da Pavlovina olarak da adlandırılan (Dük Pavle Radenković'in izinden) şehrin kalıntılarını görebilirsiniz.<br><br>
+Harabeler iki yerde bulunur ve "Gornji grad" ve "Donji grad" olarak adlandırılır. Stari gradın alt kısmında ve üstünde yaklaşılması zor kayaların tepesinde, Drina'nın nöbet kulesi olarak kullanılan "Kraljević Marko Kulesi" adlı bir yer bulunur. Kaçakçılığın önlenmesi ve Sırp ayaklanmalarını  bastırmak için, Türk yönetimi sırasında taşlarla kaplanan yüksekliği 8 m olan oval bir cisimdir. Ünlü Türk seyyah Evliya Çelebi, Mehmed Paşa'nın 1577 yılında Vişegrad kasabasını kurduğunu yazar ancak şehrin biraz yukarısında Vişegrad olarak adlandırılan eski bir yerleşimin de olduğu sabittir.<br><br>
+Türk kaynaklarına göre kent, Osman Paşa tarafından 1544'te alındı ve kent, o tarihten sonra 1878'de bütün Bosna'nın Avusturya-Macaristan tarafından ele geçirildiği Berlin Kongresine kadar Türk yönetimi altında kaldı. Avusturya-Macaristan'ın gelişiyle Vişegrad daha derli toplu bir kent merkezi haline geldi. Su şebekesi inşa edildi, tapu kayıtları yapıldı, dar ölçülü demiryolları ve diğer devlet binaları yapıldı.<br><br>
+Birinci Dünya Savaşı'ndan sonra Vişegrad, Bosna ve Hersek'in de bir parçası olduğu Yugoslav Krallığı'nın bir parçası haline geldi.<br><br>
+Birinci ve İkinci Dünya Savaşı sırasında kent neredeyse tamamen yıkıldı, çoğu bina Drina köprüsü de dahil olmak üzere ağır hasar gördü.<br><br>
+Şu anda Vişegrad, Bosna-Hersek'te özerk Sırp Cumhuriyeti'nin bir şehridir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="jajce">
+						<h2><a href="#"></a>JAJCE (YAİTSE)</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/jajce.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Yaitse, tarihte savaşlardan kendi payına düşeni fazlasıyla elde etmiştir. Yaitse kalesi, 1528'de Osmanlının kesin olarak  bağımsız Bosna eyaletini kurana kadar birkaç kez el değiştirmiştir.
+Birçok medeniyetin bu yer üzerinde yerleşip savaşmışlardır. Bunlardan birisi de 1943'te burada Bosna ve Yugoslavya tarihinin en tarihi anlarından biri olan AVNOJ’un imzalanması ve mühürlenmesidir.<br><br>
+Yugoslavya Ulusal Kurtuluş Ordusu Anti-Faşist Konseyi'nin 29 Kasım'daki ikinci toplantısında, eşit federal bir birim olarak Bosna-Hersek'in Federal Demokratik Yugoslavya'ya gireceği belirtilmiştir.<br><br>
+Bu kararlar, bölgenin gelecekteki demokratik ve federal örgütlenmesinin özeti yerindedir. Muhtemelen kasabanın eteklerinde suyun bol miktarda bulunmasından dolayıdır ki Yaitse tarihte bu kadar çekici ve önemli bir yerleşim yeri haline gelmiştir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="fojnica">
+						<h2><a href="#"></a>FOJNİTSA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/fojnica.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Iliryanların burada önemli yerleşimlerinin bulunduğu ve Roma fethi sırasında şehrin zengin altın varlıkları nedeniyle hızla önem kazandığı düşünülmektedir.<br><br>
+Osmanlıların şehri almasının çok daha öncesinde bugünkü Fojnica ve çevresinde bulunan Kozograd, Zvonigrad ve Kasteli kasabalarında el sanatları ve ticareti oldukça gelişmişti.<br><br>
+Zec (tavşan) Dağı'nın eteklerinde bulunan bir kale olan Kozograd’ın, en azından 15nci yüzyılın başlarından bu yana, Dubrovnikli madencilerin hazinelerini Osmanlı güçlerinden gizlemesinden beri varolduğu düşünülüyor.<br><br>
+Ayrıca, bu kalenin Kraliçe Katarina'nın önce Dubrovnik'e ardından Roma'ya kaçmadan evvel kaldığı son yer olduğuna ve arkasında bırakıp gittiği krallığına asla geri dönemeyeceğine de inanılmaktadır.<br><br>
+Zvonigrad, muhtemelen eski madencilerin sığınmak istedikleri bir tarih öncesi yerleşim yeridir.  Avcılık mekanı Zahor'un yakınında bulunan Kasteli, Osmanlı'nın Bosna istilası sırasında Foynitsa'dan gelen Fransisken keşişleri için geçici bir barınaktı. Bu üç kasaba da artık birer harabe.<br><br>
+Altın madeni bakımıdan zengin bir kasaba olan Foynitsa’yla ilgili ilk kayıtlar ilk defa madencilerin 1365 yılında Almanya ve Dubrovnik'ten insanların bu altın madenini işletmek için gelmelerinde geçmektedir. 15. yüzyılın sonlarında, Osmanlı istilasından sonra, Foynitsa 329 haneye sahipti. Aynı dönemde Mostar, şimdilerde Foynitsa’'nın 20 kat büyüklüğünde, yalnızca 19 konuta sahipti.<br><br>
+Foynitsa, bu tarihinin yanında günümüzde Fransisken kilisesi, kaplıcaları ve yetiştirdiği sebze meyveleriyle öne çıkan bir şehirdir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="bihac">
+						<h2><a href="#"></a>BİHAÇ</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/bihac.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Bölge en azından İliryalı ve Roma zamanlarından itibaren bir yerleşim yeridir, ancak kentle ilgili ilk bilgi 1260 yılında Kral Bela IV'e ait bir belgede geçmektedir.
+Osmanlılar ile Avusturya-Macaristan arasındaki sınırı çizen, kuzeybatı uç sınırı olan bu topraklardı. Bihaç, Una Nehri kıyısıında büyüleyici küçük bir kasabadır. Kasaba, kaçınılmaz olarak güzel Una'nın etrafında yerleşen kafelerle dolu. Bu, Bihaç'a Una’nın zümrüt sularında yerleşen kasabalardan herhangi birine paha biçilmez bir değer katmaktadır.
+Adriyatik sahiline giderken veya sınırın ötesinde Plitvice Milli Parkı'nı ziyarete gidiyorsanız, Bihaç durmak için harika bir yerdir. Ya da daha iyisi, bu su kütlesinin büyüsünü gerçekten yaşamak için - birkaç günlüğüne kalın, kıyıları boyunca yürüyün, harika şelalelerinden aşağı atlayın ya da suyun her zaman söylediği hikmetleri dinleyin.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="tuzla">
+						<h2><a href="#"></a>TUZLA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tuzla.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Majevica Dağı'nın güneydoğu yamacında yer alan Tuzla şehri, Bosna-Hersek'in kuzeydoğusunda yer alan bölgenin merkezinde yer almaktadır.<br><br>
+Kasaba, deniz seviyesinden 239m yüksekliğindedir ve yaklaşık 15 km2'lik bir alanı kaplamaktadır. Şehrin nüfusu yaklaşık 100.000'dir ancak  belediye mücavir alanıyla beraber  170.000'den fazla nüfusa sahiptir.<br><br>
+Tuzla'nın tarihi hep şehrin tuz kaynaklarıyla yakından ilişkilidir. Yunanlıların geride bıraktığı en eski yazılı kayıtlar, bölgenin tuzunun farkında olduklarını kanıtlamaktadır. Tuzla adını daha sonra almıştır. Günümüzdeki isim, tuz anlamına gelen Tuz kelimesinden türetilmiştir. Tuzla'nın tuzlu su kaynaklarının kullanımını gösteren ilk Osmanlı belgesi 1548 yılına dayanmaktadır.<br><br>
+Osmanlı'nın 1460'da şehre gelişiyle birlikte tuz üretimi beş kat artmış ve şehir önem kazanmıştır. 17. yüzyıl Osmanlı idaresindeki engin reformlarla kent ekonomisinin daha serbestçe gelişmesi sağlanmıştır.<br><br>
+Modern el sanatlarının yapılmaya başlanmasıyla Tuzla, Zvornik sancağının idari merkezi haline geldi ve Bosna'nın kuzeydoğusundaki önemli bir iletişim, askeri, ticaret ve kültür merkezi haline geldi.<br><br>
+Osmanlı yönetiminin sonlarına doğru Tuzla yaklaşık 5.000 nüfusa sahipti ve Bosna-Hersek'teki en büyük şehirlerden biriydi.<br><br>
+Osmanlı döneminden kalma birçok yapı Tuzla'da bulunmaktadır. Tipik bir taş minare ile Turalibeg Camii, 16. yüzyılda inşa edilmiş olup ve bugün hala ayaktadır. Avusturya-Macaristan, tuz ve kömür çıkarmak için şehre daha modern yöntemler getirmiş ve Tuzla’yı imparatorluğun ekonomisinin ayrılmaz bir parçası hâline getirmiştir. Kent, Yugoslavya'da önemli bir ekonomik rol oynamaya devam etti.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="srebrenica">
+						<h2><a href="#"></a>SREBRENİTSA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/srebrenica.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Srebrenitsa'da kısa bir süre önce anıt mezarlık açıldı. Anma merkezi, güzel ve kalbe dokunaklı bir yer. Srebrenica'da hayat normale dönüyor olabilir, ancak hayatta kalan kadınlar ve çocuklar kardeşleri, babaları, kocaları ve arkadaşları olmadan hayatlarını sürdürmeye devam ediyorlar.<br><br>
+Trajik geçmişine rağmen, yamaca yaslanan güzel sık ormanlarıyla ya da kentin güneydoğusunda yer alan ayıları ve kurtları bol vahşi doğasıyla kesinlikle görülmesi gereken bir yerdir Srebrenitsa.<br><br>
+Srebrenitsa'ya gelin. Srebrenitsa içinde ve çevresinde gezip görmek için gayet güzel yerler bulundurmaktadır. Şifalı kaynak suları, muhteşem çam kaplı tepeleri ve kırlara damga vuran güzel köyleri gibi.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+
+
+					<hr class="margin-bottom-40">
+
+				</div>
+				<!-- End Left Sidebar -->
+
+				<!-- Right Sidebar -->
+				<div class="col-md-3">
+
+					<!-- Activities -->
+					<div class="posts margin-bottom-40">
+						<div class="headline headline-md"><h2>ŞEHİRLER</h2></div>
+						<dl class="dl-horizontal">
+							<dt><a href="#sarajevo"><img src="{% static "img-temp/cities/tabs/sarajevo.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#sarajevo"><b>SARAYBOSNA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#mostar"><img src="{% static "img-temp/cities/tabs/mostar.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#mostar"><b>MOSTAR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#travnik"><img src="{% static "img-temp/cities/tabs/travnik.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#travnik"><b>TRAVNİK</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#visegrad"><img src="{% static "img-temp/cities/tabs/visegrad.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#visegrad"><b>VİŞEGRAD</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#jajce"><img src="{% static "img-temp/cities/tabs/jajce.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#jajce"><b>JAJCE (YAİTSE)</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#fojnica"><img src="{% static "img-temp/cities/tabs/fojnica.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#fojnica"><b>FOJNİTSA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#bihac"><img src="{% static "img-temp/cities/tabs/bihac.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#bihac"><b>BİHAÇ</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#tuzla"><img src="{% static "img-temp/cities/tabs/tuzla.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#tuzla"><b>TUZLA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#srebrenica"><img src="{% static "img-temp/cities/tabs/srebrenica.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#srebrenica"><b>SREBRENİTSA</b></a></p>
+							</dd>
+						</dl>
+					</div>
+					<!-- End Activities -->
+				</div>
+				<!-- End Right Sidebar -->
+			</div><!--/row-->
+		</div><!--/container-->
+		<!--=== End Content Part ===-->
+
+
+
+		{% include 'footer.html' %}
+	</div><!--/wrapper-->
+
+	<!--=== Style Switcher ===-->
+	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+	<div class="style-switcher animated fadeInRight">
+		<div class="style-swticher-header">
+			<div class="style-switcher-heading">Style Switcher</div>
+			<div class="theme-close"><i class="icon-close"></i></div>
+		</div>
+
+		<div class="style-swticher-body">
+			<!-- Theme Colors -->
+			<div class="style-switcher-heading">Theme Colors</div>
+			<ul class="list-unstyled">
+				<li class="theme-default theme-active" data-style="default" data-header="light"></li>
+				<li class="theme-blue" data-style="blue" data-header="light"></li>
+				<li class="theme-orange" data-style="orange" data-header="light"></li>
+				<li class="theme-red" data-style="red" data-header="light"></li>
+				<li class="theme-light" data-style="light" data-header="light"></li>
+				<li class="theme-purple last" data-style="purple" data-header="light"></li>
+				<li class="theme-aqua" data-style="aqua" data-header="light"></li>
+				<li class="theme-brown" data-style="brown" data-header="light"></li>
+				<li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+				<li class="theme-light-green" data-style="light-green" data-header="light"></li>
+				<li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+				<li class="theme-teal last" data-style="teal" data-header="light"></li>
+			</ul>
+
+			<!-- Theme Skins -->
+			<div class="style-switcher-heading">Theme Skins</div>
+			<div class="row no-col-space margin-bottom-20 skins-section">
+				<div class="col-xs-6">
+					<button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
+				</div>
+				<div class="col-xs-6">
+					<button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Layout Styles -->
+			<div class="style-switcher-heading">Layout Styles</div>
+			<div class="row no-col-space margin-bottom-20">
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>
+				</div>
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Theme Type -->
+			<div class="style-switcher-heading">Theme Types and Versions</div>
+			<div class="row no-col-space margin-bottom-10">
+				<div class="col-xs-6">
+					<a href="E-Commerce/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="One-Pages/Classic/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">One Page <small class="dp-block">Template</small></a>
+				</div>
+			</div>
+
+			<div class="row no-col-space">
+				<div class="col-xs-6">
+					<a href="Blog-Magazine/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Blog <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
+				</div>
+			</div>
+		</div>
+	</div><!--/style-switcher-->
+	<!--=== End Style Switcher ===-->
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery-migrate.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/bootstrap/js/bootstrap.min.js"%}"></script>
+	<!-- JS Implementing Plugins -->
+	<!--<script type="text/javascript" src="{% static "plugins/back-to-top.js"%}"></script>-->
+	<script type="text/javascript" src="{% static "plugins/smoothScroll.js"%}"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="{% static "js/custom.js"%}"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="{% static "js/app.js"%}"></script>
+	<script type="text/javascript" src="{% static "js/plugins/style-switcher.js"%}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			StyleSwitcher.initStyleSwitcher();
+		});
+	</script>
+	<!--[if lt IE 9]>
+    <script src="{% static "plugins/respond.js"%}"></script>
+    <script src="{% static "plugins/html5shiv.js"%}"></script>
+    <script src="{% static "plugins/placeholder-IE-fixes.js"%}"></script>
+  <![endif]-->
+{% endblock content %}

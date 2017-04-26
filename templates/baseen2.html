@@ -1,0 +1,81 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles%}
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<title>{% block title %}This is my new project home page{% endblock title %}</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+
+	<!-- Web Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=cyrillic,latin">
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="{% static "plugins/bootstrap/css/bootstrap.min.css"%}">
+	<link rel="stylesheet" href="{% static "css/app.css"%}">
+	<link rel="stylesheet" href="{% static "css/blocks.css"%}">
+	<link rel="stylesheet" href="{% static "css/style.css"%}">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="{% static "css/headers/header-default.css"%}">
+	<link rel="stylesheet" href="{% static "css/footers/footer-v1.css"%}">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="{% static "plugins/animate.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/line-icons/line-icons.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/font-awesome/css/font-awesome.min.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/sky-forms-pro/skyforms/css/sky-forms.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/owl-carousel2/static/owl.carousel.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/master-slider/masterslider/style/masterslider.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/master-slider/u-styles/testimonials-1.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/master-slider/u-styles/promo-1.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/brand-buttons/brand-buttons.css"%}">
+	<link rel="stylesheet" href="{% static "plugins/brand-buttons/brand-buttons-inversed.css"%}">
+
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="{% static "css/travel.style.css"%}">
+	<link rel="stylesheet" href="{% static "css/theme-colors/default.css"%}" id="style_color">
+	<link rel="stylesheet" href="{% static "css/theme-skins/dark.css"%}">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="{% static "css/custom.css"%}">
+
+    {% render_block "css" %}
+</head>
+<!--
+	The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
+-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+
+{% cms_toolbar %}
+
+{% block content %}
+{% endblock content %}
+
+{% render_block "js" %}
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/58edd8dff7bbaa72709c5d5f/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+</body>
+</html>

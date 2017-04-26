@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>Machine Gun</caption>
+  <note>Man shooting machine gun at a target at shooting range
+** Note: Shallow depth of field</note>
+  <place/>
+  <categories>
+    <category value="aim"/>
+    <category value="ammo"/>
+    <category value="arm"/>
+    <category value="army"/>
+    <category value="automatic"/>
+    <category value="background"/>
+    <category value="black"/>
+    <category value="bullet"/>
+    <category value="clip"/>
+    <category value="combat"/>
+    <category value=""/>
+  </categories>
+</comment>

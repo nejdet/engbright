@@ -1,0 +1,919 @@
+{% extends "tourbaseen.html" %}
+{% load cms_tags staticfiles%}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+	<div class="wrapper">
+		<!--=== Header ===-->
+		<div class="header">
+			<div class="container">
+				<div class="col-md-4" >
+					<!-- Logo -->
+					<a class="logo" href="/">
+						<img src="{% static "img/logo_turkuaz.png"%}" height="60" width="100" alt="Logo">
+					</a>
+					<!-- End Logo -->
+				</div>
+
+
+				<!-- Topbar -->
+				{% include 'topbar.html' %}
+				<!-- End Topbar -->
+
+				<!-- Toggle get grouped for better mobile display -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<!-- End Toggle -->
+			</div><!--/end container-->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<!-- Home -->
+						<li class="headline ">
+							<a href="/bosnia-tours">
+								BOSNA TURLARI
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Pages -->
+						<li class="headline">
+							<a href="/balkan-tours" >
+								BALKAN TURLARI
+							</a>
+						</li>
+						<!-- End Pages -->
+
+						<!-- Portfolio -->
+						<li class="headline">
+							<a href="/alternatives" >
+								ALTERNATİF TURLAR
+							</a>
+						</li>
+						<!-- End Portfolio -->
+
+						<!-- Home -->
+						<li class="headline active">
+							<a href="/cities">
+								ŞEHİRLER
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Features -->
+						<li class="headline">
+							<a href="/rentacar">
+								ARAÇ KİRALAMA
+							</a>
+						</li>
+						<!-- End Features -->
+					</ul>
+				</div><!--/end container-->
+			</div>
+			<!--/navbar-collapse-->
+
+		</div>
+		<!--=== End Header ===-->
+
+		<!--=== Breadcrumbs ===-->
+		<div class="breadcrumbs">
+			<div class="container">
+				<h1 class="pull-left">ŞEHİRLER HAKKINDA</h1>
+				<ul class="pull-right breadcrumb">
+					<li><a href="/">Ana Sayfa</a></li>
+					<li>Şehirler</li>
+					<li class="active">Balkan Şehirleri</li>
+				</ul>
+			</div>
+		</div><!--/breadcrumbs-->
+		<!--=== End Breadcrumbs ===-->
+		<!-- Bosna Tours 2 Section -->
+		<div class="popular-tours text-center g-heading-v8 g-pt-40 g-pb-20" id="Popular-Tours">
+			<div class="container">
+				{% include 'topsocialbar.html'%}
+
+				<div class="row text-center">
+					<!-- Item 3 -->
+					<div class="col-md-4 col-xs-6 col-2xs-12 col-md-offset-2">
+						<div class="popular-tours-item">
+							<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/cities/tinytabs/mostar.jpg"%}" alt="ALT" class="img-responsive"></div>
+							<div class="popular-tours-item-info">
+								<div class="popular-tours-item-info-inner">
+									<h3>BOSNA HERSEK</h3>
+								</div>
+							</div>
+							<a href="/cities" class="popular-tours-item__more"></a>
+						</div>
+					</div>
+					<!-- End Item 3 -->
+					<!-- Item 4 -->
+					<div class="col-md-4 col-xs-6 col-2xs-12 ">
+						<div class="popular-tours-item">
+							<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/cities/tinytabs/dubrovnik.jpg"%}" height="100px" alt="ALT" class="img-responsive"></div>
+							<div class="popular-tours-item-info">
+								<div class="popular-tours-item-info-inner">
+									<h3>BALKANLAR</h3>
+								</div>
+							</div>
+							<a href="/cities/cities2" class="popular-tours-item__more"></a>
+						</div>
+					</div>
+					<!-- End Item 4 -->
+				</div>
+			</div>
+		</div>
+		<!-- End Bosnia Tours2 Section -->
+
+		<!--=== Content Part ===-->
+		<div class="container content">
+
+			<div class="row blog-page">
+				<!-- Left Sidebar -->
+				<div class="col-md-9 md-margin-bottom-40">
+
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="dubrovnik">
+						<h2><a href="#"></a>DUBROVNİK</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/dubrovnik.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Asırlar arasında gezinti.
+Dubrovnik'in geçmişi ve kısa hikayesi.
+
+Dubrovnik demek öncelikle deniz ticaretine elverişli coğrafi konum ve deniz ticaretine dayanan bir ekonomi demek.
+Adriyatik Denizi'ne girerken, Dubrovnik, doğudan batıya giden deniz yolu üzerindeki ilk konaklı limandır ve Neretva Vadisi üzerinden hinterlanda hızlı erişim sağlar. Son arkeolojik araştırmalar, bugünkü şehrin yerinde en eski yerleşimin 6. yüzyıldan ait ya da muhtemelen daha eski zamanlardan beri var olduğunu göstermektedir. Antik Epidaurus'tan (Cavcat) ayrıldıktan sonra Hırvatların 7. yüzyılda bugün şehrin bulunduğu yere gelmeleriyle birlikte Dubrovnik gelişmeye başlamıştır.
+
+12. ve 13. yüzyıllarda haçlı seferleri sırasında ve sonrasında Doğu ile Batı arasındaki trafiğin yoğunlaşması, Akdeniz ve Adriyatik Denizi boyunca deniz ve ticaret merkezlerinin gelişmesine neden oldu.
+Dubrovnik de bu şehirlerden biriydi. 1358'de Venedik yönetiminden Dubrovnik'i ayıran Zadar Antlaşması, Dubrovnik’in gelişmesi için tarihi bir adım oldu. Bunu başaramayan geri kalan Dalmaçya kasabaları ise 1420'de mutlak şekilde Venedik egemenliği altına girmek zorunda kaldılar. Zaten 14. ve 15. yüzyıllarda Dubrovnik, Venedik ve Ankona'yla birlikte Adriyatik'in en önemli deniz ve ticaret merkeziydi. Dubrovnik, anlaşmalar yaparak ve Kuzey'deki Klek'ten Mljet, Lastovo, Elaphite ve Lokrum adaları da dahil olmak üzere Kotor Körfezi girişindeki Sutorina'ya kadar arazi satın alarak topraklarını genişletti.
+Dubrovnik Cumhuriyeti yasal statüsünü tam olarak 15. yüzyılda kazanmıştır. Bu, bir reis ve meclis üyelerinin bağımsız olarak seçilmesi, para basma, St. Blaise adına bir devlet bayrağı, bağımsız mahkeme ve yurtdışında temsilcilikler oluşturma hakkı anlamına geliyordu.
+Aristokrat anayasaya göre, devlet otoritesi Dubrovnik’in aristokrat ailelerinden oluşan Büyük Konsey'e dayanıyordu. Bu aileler Senato ve Büyük Konseyin yürütme organı olan Küçük Konsey üyeleri olarak atandılar. Reis, sembolik olarak bir aylık yetkili olarak atanmaktaydı.
+
+15. yüzyılda Dubrovnik, Balkan hinterlandıyla iyi organize edilmiş bir transit ticaret rotasına sahipti. 1525'te Dubrovnik Cumhuriyeti, Balkanlar'da hızla yayılan ve güçlü olan Türk idaresini tanımaya ve haraç ödemeye razı oldu.
+Bununla birlikte karşılığında Türk İmparatorluğu genelinde serbest ticaret hakkı elde etti, sadece % 2 oranında bir gümrük vergisi ödemekteydi. Kendi ordusuna sahip olmayan bu küçük devlet, savunma mekanizmasını, becerikli diplomasisi ve geniş dışişleri faaliyetleri ile sağlamıştır.
+Uluslararası çatışmalarda tarafsızlığını koruyarak ve özellikle İspanya ve Vatikan gibi güçlü ülkelerinin vesayetinde bağımsızlığını korumayı başardı. Sadece Venedik Cumhuriyeti, ezeli rakibi ve düşmanı olarak kalmıştır.
+Dubrovnik Cumhuriyeti, 16. yüzyılda, Venedik imparatorluğunun eski gücünü kaybetmesiyle altın bir çağa girdi. Refahı deniz ticaretine dayanıyordu. 16. yüzyılda Dubrovnik ticaret filosu, dünya çapında 180 ila 200 gemi kapasitesine sahipti. Zamanla kalyonlar gibi daha büyük gemi türleri de inşa edildi. Duroknikliler bu gemilerle Akdeniz ve Karadeniz boyunca uzun ve tehlikeli yolculuklara gitmelerinin yanı sıra İngiltere ve Almanya'daki kuzey limanlarına, hatta Hindistan'a ve Amerika'ya kadar okyanus yolculuklarına başladılar. Dubrovnik denizcilik ve ticari kargo taşımacılığında dünyaca tanınır ve aranır bir marka oldu. Maddi refahla beraber güvenlik ve özgürlük duygusu, Dubrovnik'te yeniliklere açık ilham veren bir hümanist bir  kültürün de şekillenmesine yardımcı oldu. Dubrovnik, edebiyat ve şiirde (Marin Držić, Ivan Gundulić) bilim dalında (Ruđer Bošković) ve gibi yetiştirdiği muhteşem sanatçıları ve bilim insanlarıyla sanat ve kültürün değişik dallarında  şehir ve mimari gelişimine çok önemli değerler kattı. 17. yüzyılda, Akdeniz deniz ticaretindeki genel darboğaz, Dubrovnik deniz ticaretini de etkiledi. 1667'de meydana gelen ağır deprem, Dubrovnik Cumhuriyeti'ni hayatta kalma ve siyasi bağımsızlık için savaştığı kritik bir döneme soktu. 18. yüzyıl, Dubrovnik'e tarafsız bayrak altında deniz ticaretinin ekonomik olarak yeniden canlanışı için bir fırsat sağladı. Napolyon, 1808'de Dubrovnik Cumhuriyeti'ni sona erdirdiğindeki son hâli böyleydi.
+1815 Viyana Kongresi'nde Dubrovnik bölgesi, Dalmaçya  ve diğer bölgelerle beraber Hırvatistan'a katıldı. O zamandan beri ortak siyasi kaderi paylaşmaktadırlar.
+
+Hırvatistan Cumhuriyetinin bağımsızlık ilanının ardından Hırvat topraklarına Sırp saldırısı sonrasında Dubrovnik Ekim 1991'de saldırıya uğramıştır. Sırplar ve Karadağlılar, şimdiye kadar görülmemiş tahripkâr bir kuvvetle saldırarak bölgeyi almayı ve yok etmeyi amaçlamışlardı. Dubrovnik bölgesi işgal edildi ve önemli ölçüde harap edildi. 8 aylık kuşatmada, şehir tekrar tekrar bombardımana tabi tutuldu. En acımasız tahribat 06 Aralık 1991'de gerçekleşti.
+
+Bugün, savaş nedeniyle harap olan Dubrovnik'in kültür mirası büyük çoğunlukla onarıldı. Yenilenen oteller, Dubrovnik Yaz Festivali vb diğer kültürel etkinliklere ev sahipliği yapan mekânlar Dubrovnik'te modern turizmin gelişimi için çok önemli rol oynamaktadırlar</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="kotor">
+						<h2><a href="#"></a>KOTOR</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/kotor.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Dünyanın en güzel koylarından birinde yer alan Kotor, tüccarların ve ünlü denizcilerin şehri olup tarihine birçok hikaye sığdırmıştır.<br><br>
+Kotor'un eski kaleiçi, 12. ve 14. yüzyıllar arasında inşa edilmiş tipik ve iyi korunmuş bir ortaçağ yerleşimidir. Ortaçağ mimarisi ve çok sayıdaki kültürel mirası sebebiyle  UNESCO tarafından Kotor "Dünya Tabii ve Tarihi Miras Listesi"ne alınmıştır.<br><br>
+Tüm şehirde binalar, dar sokaklar ve meydanlar birbirini çaprazlama keser. Bu meydanlardan birinde, Roma kültürünün ve şehrin en tanınmış simgelerinden biri olan Saint Tryphon Katedrali (Sveti Tripun) bulunur.<br><br>
+13. yüzyıldan kalma Saint Luke Kilisesi (Sveti Luka), 12. yüzyıldan kalma Saint Ana Kilisesi (Sveta Ana), 13. yüzyıldan kalma Saint Mary Kilisesi (Sveta Marija), Şifacı Anne Kilisesi (Gospe od Zdravlja), 17. yüzyıldan kalma Prens Sarayı ve 19. yüzyıldan kalma Napolyon Tiyatrosu Kotor'un zengin kültür ve tarih mirasına ait birer hazine gibidirler. Her yıl düzenlenen karnavallar ve festivaller Karadağ kıyısındaki bu en güzel şehre ayrı bir çekicilik kazandırmaktadır.<br><br>
+Oniki ay boyunca dünyanın her yerinden çok sayıda turist çeken Kotor, 2016 yılında en iyi turizm kenti seçilmiştir. Benzersiz Boka körfezinde bulunan bu büyüleyici eski kasaba, kesinlikle nefesinizi kesecektir.<br><br>
+Zamana sıkışmış gerçeküstü ve eşsiz bir atmosferde bulunan Kotor, eski efsaneleriyle ve şaşırtıcı hayat hikâyeleriyle size kendini anlatacaktır. Eğer, Lonely Planet 2016’da turizm için en iyi yer olarak  Kotor'u (Karadağ) seçmeye karar vermişse (Best in Travel City 2016)  bu kararın doğruluğunu fazlaca düşünmeye gerek yoktur. Hemen seyahat valizinizi hazırlayın. Yanınıza fotoğraf makinenizi de almayı unutmayın!<br><br>
+Kotor'da bulunan tüm cazibe merkezlerini ziyaret etmek için birkaç saat yetebilir ancak kesinlikle Old Town'da kalmanız gereken süre en uzunu olacaktır.<br><br>
+Kotor ve bütünüyle Boka Kotorska Körfezi'nin sizi etkileyeceğini garanti ederiz.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="budva">
+						<h2><a href="#"></a>BUDVA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/budva.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Çok sayıda plajı ve oteli Budva’yı , Karadağ’ın en çok arzu edilen turistik yeri haline getirmiş ve  Karadağ turizminin kalbi hâline getirmiştir. Budva, doğal güzelliklerinin yanı sıra koyları, adaları ve plajları dışında tabii eserleri bakımından da oldukça zengindir.<br><br>
+Budva kaleiçi, küçük bir yarımada üzerinde uzanır ve Karadağ kültür mirasının hazine sandığı yerindedir. Dar sokaklar ve birbirini çaprazlama kesen ünlü yapılar; Kilise Sv. Trojica (Aziz Teslis), yazar Stjepan Mitrov Ljubisa'nın mezarını barındıran Sv. Ivan, Sv. Bogorodica ve Sv. Sava kiliseleri bunlardan bazılarıdır.<br><br>
+Budva, yaz aylarında yurtdışından gelen çok sayıda şov ve yerel gösteri ekipleri ile adeta bir şehir tiyatrosuna dönüşür. Stari Grad'da (Eski Şehir) birçok dükkan, kafe, restoran ve galeriyi de ziyaret edebilirsiniz. Manastır Stanjevici, Podostrog, Rezevici ve Gradiste Budva'nın önemli tarihi ve dini eserleridir.<br><br>
+Budva sahili 21 km uzunluğundadır ve 17 plajı vardır. Dünyanın en güzel kıyılarındandır ve güzellikleri sizi kendisine kayıtsız bırakmaz. Ayrıca, çok uygun fiyatlılardan özel ve lüks olanlarına kadar geniş konaklama yelpazesine de sahiptir.<br><br>
+Budva, (Karadağ) muhakkak ziyaret edilmelidir, bütün şehir sanki kendini turistlere en iyi hizmeti vermeye adamıştır. Budva, Karadağ'da turizmin metropolü olarak bilinir; kesinlikle gezmeyi görmeyi düşünen herkesin ziyaret etmesi gereken bir şehirdir. Burada, her şey turiste ve turizme hedeflidir. Bu nedenle, aradığınız ne varsa kolayca bulursunuz. Güzel ve modern donanımlı plajlar unutulmaz bir atmosfer sunar. Mükemmel oteller, villalar ve daireleriyle Budva, misafirlerinin tatillerini geçirmeleri için kendisine cezbeder.<br><br>
+Budva, coğrafi konumunun güzelliği nedeniyle Karadağ kıyılarındaki tüm diğer bölgelerle ve aynı zamanda Karadağ'ın orta ve kuzey kesimlerinde bulunan harika yerler ile de kolayca bağlanmaktadır. Budva'da kahvaltı yapabilir, birçok güzel sahilden (Mogren, Becici, İnce Kum, Jaz, Trsteno, Sveti Stefan, Budva) birinde yüzebilir, daha sonra Millil Park Lovçen veya İşkodra Gölü'nde öğle yemeğinizi yiyebilir ve en sonunda Durmitor Milli Parkı'nın görkemli dağlarında akşamın tadını çıkarabilirsiniz. Bir zamanlar küçük bir balıkçı köyü olan bu belde son on yılda dünyanın en lüks tatil beldelerinden biri hâline gelmiştir. Sveti Stefan, neredeyse tüm ünlü insanlar tarafından ziyaret edilen turistik bir yerdir (Sophia Loren, Claudia Schiffer, Sylvester Stallone, vb.).<br><br>
+Anakaraya iki muhteşem kumlu plajla çevrili dar bir parkurla ve güzel bir parkla bağlanan bu pitoresk yer, en titiz turistler için bile en üst düzeyde hizmet verecek seviyededir. Sveti Stefan'daki villalardan biri olan (Villa Montenegro) 2006'da Amerikan Otelcilik Akademisi tarafından "Beş Yıldızlı Pırlanta" ödülü almıştır (American Academy of Hotelier Science). Ancak hepsi bu kadar değil, Sveti Stefan birçok prestijli ödüle daha layık görülmüştür ("Golden List" 2008, Top International Hotel vb). <br><br>
+Bir zamanlar bir kraliyet tatil villası olan "Villa Milocer", hemen hemen dünyanın en güzel kumsallarından biri olan "Queen's beach" yakınlarında bulunan güzel ve zengin parkta bulunan küçük ve lüks bir otel olarak hizmet vermektedir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="podgorica">
+						<h2><a href="#"></a>PODGORİTSA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/podgorica.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Podgoritsa, Karadağ'ın resmi başkenti, ticari ve kültürel merkezidir. Adını 1326 yılında etrafında çıkan beş nehir olan Zeta, Moraca, Ribnica, Cijevna ve Sitnica arasında inşa edilmesinden almıştır. II. Dünya Savaşı sırasında kentin büyük kısmı tahrip edilmiştir, bu nedenle Podgoritsa nispeten yeni ve modern yapılarla doludur. Ayrıca şehrin adım atılan her yeri yeşil alanları ve parklarıyla arz-ı endam etmektedir. Podgoritsa birçok kültürel etkinliğe ve Crnogorsko Narodno, Gradsko ve Dodest gibi birçok tiyatroya da ev sahipliği yapmaktadır.<br><br>
+Podgorica civarındaki ve çevresindeki diğer kültürel ve tarihi anıtlar, Nemanjica Grad'ın yıkıntıları, Aci-Paşa Osmanagiç Saat kulesi, Doclea şehrinin kalıntıları, Stara Varoş ve Vezirov'dur. Podgorica'nın diğer şehirlerle mükemmel transit bağlantıları vardır. Kentten dokuz kilometre uzakta olan Uluslararası Havaalanı ile demiryolu ve otobüs istasyonları birbirine çok yakın mesafededirler. Ancak turistler için, Podgoritsa beldesinin en ilginç kısmı, inanılmaz sayıda kuş ve bitki türü (bazıları çok nadir) ile Balkanlardaki en büyük göl olan İşkodra Gölü ya da diğer adıyla Milli Park Skardarsko'dur.<br><br></p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="ostrog">
+						<h2><a href="#"></a>OSTROG</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/ostrog.jpg"%}" alt="">
+						</div>
+						<div>
+							<h3></h3>
+							<p>Karadağ'da en çok ziyaret edilen yerlerden birisi Manastır Ostrog'dur. Bu görkemli ve eşsiz manastır, Niksiç yakınlarındaki Byelopavik vadisinin üzerinde yer alır. Manastır, sanki eski sırlarını saklarmış gibi yalçın kayalıklar üzerinde derince oyulmuştur.
+Sahilden iki saatten az bir mesafede yer alan çoğu zaman bulutlar ve sislerle örtülü bu manastır, Karadağ'ın en ünlü hac mekânıdır. 17. yüzyılda bu Manastır'da gömülmüş olan ve kerametli aziz olarak bilinen Hersekli metropolit Vasilije tarafından yaptırılmıştır.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="belgrad">
+						<h2><a href="#"></a>BELGRAD</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/belgrad.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Belgrad'ın tarihi geçmişte yaklaşık 7000 yıl geriye gider. Belgrad, Avrupa'nın en eski şehirlerinden biridir ve kendi topraklarında tarih öncesi dönemden kalma ilk yerleşim yeri olan Vinca M.Ö. 4800’lü yıllardan kalmadır.<br><br>
+Bir Roma yerleşimi olan Singidunum olmadan önce Belgrad, M.Ö. 3. yüzyılda Keltler tarafından kurulmuştur. Slovence adı "Beligrad" ilk olarak M.S. 878 yılında kayıtlara geçmiştir.<br><br>
+Belgrad, 1817 yılından 1818-1841 döneminde Kragujevac hariç olmak üzere, Sırbistan Prensliğinin başkenti olmuştur. Knez Mihajlo Obrenoviç, Kragujevac'tan başkenti Belgrad'a taşımıştır.<br><br>
+Sırbistan, Sırbistan Krallığı olarak 1878 yılında tam bağımsızlığını kazanınca Belgrad Balkanlar'da önemli bir şehir haline geldi ve bir kez daha hızla gelişti. Ancak, 1900 yılında Belgrad-Niş arasında demiryolu inşaatı yapılmasına rağmen, Sırbistan'daki genel koşullar ağırlıkla diğer tarımsal ülkelerde olduğu şeklindeydi ve ancak 69.100 nüfusa sahipti.<br><br>
+1905 yılında 80.000 olan nüfus, 1914 yılında Birinci Dünya Savaşı'nın başına kadar Avusturya’ya ait Zemun’u saymazsak 100,000’i aşmıştı.<br><br>
+Birinci Dünya Savaşını, Avusturya-Macaristan ve Alman kuvvetlerinin işgalini yaşamasına rağmen Belgrad, sonrasında Yeni Yugoslavya Krallığının başkenti olarak hızlı bir gelişim ve modernizasyonun öncüsü olmuştur. Aslında, çok az insan, Avrupa'daki ilk Budist tapınağının Belgrad'da olduğunu bilir.  Nüfus, 20. yüzyılın yirmili ve otuzlu yıllarında, Zemun dahil 1931'de 239.000'a  ulaştı. 1940'a geldiğimide ise nüfus yaklaşık 320.000 idi.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="novisad">
+						<h2><a href="#"></a>NOVİSAD</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/novisad.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Novi Sad Sırbistan'ın en büyük üç şehri arasındadır ve Belgrad'dan arabayla sadece bir saat mesafededir. Novisad, hiç yarışmaya girilmemesine rağmen eğer böyle bir yarışma yapılsaydı ülkenin en güzel kasabası yarışmada Grand Prix'i kolayca kazanabilirdi.<br><br>
+Novi Sad, aynı zamanda hızlı iletişim çağında, sakinlerinin huzurunu yaşayanlarının tabii zarafetine borçludur. 300 yılı aşkın bir süredir varlığını sürdüren Petrovaradin Kayası altındaki küçük bir Pannonia tepesi olan Mt. Fruska Gora (Novisad), Tuna Nehri üzerinde genç bir kasaba olarak doğmuştu.<br><br>
+İlk kaynaklar, 1694 tarihinde, Avusturya'nın Petrovaradin Kalesi'ni inşaasına başlamasından iki yıl sonrasına aittir. O noktada, "Tuna Cebelitarık'ında" nehrin 1.255. kilometresinde Ortaçağ Hapsburg monarşisi, 1683'te Türklerin  Viyana kuşatmasından sonra, bu kaleyi inşa ederek küllerinden yeniden yükseltmişti. Üç nehrin buluştuğu bu yerde - Tuna, Tisa ve Sava- Batı ve Doğu Hıristiyanlığı ile İslam medeniyetleri üç etnik ve dini cemaat şeklinde kendilerine birer barınak ve yaşayacak yer bulmuşlardı.<br><br>
+Bu topraklar Gepileri, Hunları, Avarları, Slavları, Germenleri, Macarları, Bizanslıları, Türkleri... gördü. Petrovaradin Kaya'sında önce Romalıların temelini attığı daha sonrasında Macarların yenilediği ve en sonunda Türklerin kullandığı bir kale inşa edildi. 17. yüzyılın sonunda Türkler çıkarıldıktan sonra, Avusturyalılar Tuna'nın sol tarafında çevresinde askerler, tüccarlar ve esnaf yerleşimi için kaleye bakan bir köprübaşı inşa ettiler.<br><br>
+Başlarda bu yerleşim, Racko Selo ('Sırp Köyü') ve daha sonra Petrovaradinski Sanac ('Petrovaradin Hendeği') olarak adlandırıldı. 18. yüzyılın başlarında savaşlar sona erdikten sonra şehir büyüdükçe, özgürlüğüne kavuşmaya istekli kasaba halkı 80.000 Forintlik bir satın alma bedeli ödedikten sonra İmparatoriçe Maria Theresa tarafından ÖZGÜR SİTE KRALLIĞI statüsü verildi ve Sırpça olan NOVI SAD ismini aldı. Tarih 1 Şubat 1748'di.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="tiran">
+						<h2><a href="#"></a>TİRAN</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/tiran.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Hiç bitmeyen hareketi ve enerjisiyle Tiran.
+Arnavutluk'un kalbi ve başkenti olan Tiran, diğer tüm Avrupa metropollerinde olduğu gibi, hiç bitmeyen bir hareket ve enerjiye sahiptir. Kulüpleri, kafeleri ve tavernaları ile Tiran, gece gündüz keşfedilmeye değer bir şehirdir. Turistlere yönelik konukseverlik, yalnızca Tiran'da değil, aynı zamanda ülkenin dört bir yanındaki yolculuğunuzda da unutulmaz bir hatıra olarak kalacak.
+Şehrin adının kökeni konusunda farklı düşünceler bulunmaktadır. Bazıları Tirrenia (Etrüsk kökenli bir isim) ile ilgili olduğunu düşünürken, diğerleri Theranda (hasat) kelimesiyle veya Tirkana’nın (Dajti Dağı'nın eteğindeki bir kale) söz konusu olduğuna inanmaktadırlar.
+Tiran’da gezilecek noktalar;
+Kendi gezinize, Ethem Bey Camii'ni (1798 ile 1812 yılları arasında inşa edilmiştir), 1822'de San Marco tarzı kubbe ile inşa edilen 35 metre yüksekliğindeki Kulla e Sahatit'i (saat kulesi) Sheshi Skënderbej gibi müzeleri ve önemli noktaları ziyaret ederek başlayabilirsiniz. Sonra, eski bir Roma locasının tabanında bulunan ünlü mozaik bölümünü ziyaret edebilirsiniz.
+Sonra da eski bir Roma kulübesinin tabanında bulunan ünlü mozaik bölümünü ziyaret edebilirsiniz. Mozaik bölümünün ortası, Roma İmparatoru Justinian (A.D. 520) kalesinin duvarlarını resmeder. Kaplan Paşa Anıtsal Türbesi ve Ura e Tabakëve (19. yüzyılın başında Bulevardı Zhan D'Ark'da inşa edilmiş olan bir köprü)de ziyaret etmeye değer diğer yerler arasındadır. Ayrıca başkent olarak Tiran, ülkenin en iyi müzelerine, tiyatrolarına ve milli sanatları temsil eden galerilerine de ev sahipliği yapmaktadır.
+Ulusal Tarih Müzesi, Arkeoloji Müzesi, Doğa Bilimleri Müzesi, özel Mezuraj Müzesi ve Ulusal Sanat Galerisi ziyareti hafızanızda harika anılar bırakacaktır. Ayrıca Ulusal Tiyatro'da ya da Opera ve Bale Tiyatrosunda da hoş bir akşam geçirebilirsiniz. Tiran mutfağı, zengin bir geleneğe sahip olmasının yanında İtalya'dan Çin'e hatta Hint'e kadar çok çeşitli yabancı tarifleri de misafirlerine sunmaktadır.  Dajti Dağı'nda macera severler ve lezzet avcıları için çeşitli kulüpler ve restoranlar da bulunmaktadır. Dağa kentin muhteşem manzarasını sunan teleferik ile ulaşılmaktadır. Tiran çevresinde Petrela ve Preza kalelerini, ayrıca Pëllumbas mağarası, Shkalla e Tujanit ve benzeri tabiat parkları da ziyaret edilmeyi hak etmektedir.
+Tiran nispeten yeni bir şehirdir. 1614'de ilk binayı inşa eden bir yerel feodal bey olan Süleyman Paşa Bargini, o zamanlarda yeni doğmuş bir şehrin müesseseleri olan cami, hamam ve ocak inşa etmiştir. Günümüzde bu eserlerin yerinde  ‘Adsız Asker’ anıtı duruyor. 1816'da Toptani ailesi kentin yönetimine geldi. Tiran tarihinin en önemli tarihi Lushnja Kongresinde Tiran'ın Arnavutluk'un geçici başkenti olarak ilan edildiği 11 Şubat 1920'dir; kesin statü ise 1925'te verilmiştir. Bu hükmü takiben, kent devamlı olarak 1990'dan beri de hızlanan bir ivmeyle sürekli büyümektedir.
+Ünlü İtalyan mimarlar Tiran’ın merkezini 20. yüzyılın başlarında projelendirdiler. Tiran'daki Bulevardi Däshmorët e Kombit'deki ana cadde 1930'da, ana meydan Skanderbeg Meydanı 1928-1929 yılları arasında inşa edildi. Skanderbeg Meydanı'nda 1968'de ölümünün 500. yıldönümünde ulusal kahraman Gjergj Kastriot Skanderbeg kendi adına bir anıta da sahip oldu. Yirmi yıl sonra meydana diktatör Enver Hoca'nın anıtı da eklendi. Kısa bir süre sonra 20 Şubat 1991'de öğrenciler ve halk anıtı meydandan çıkardı. Tiran'da, Ulusal Tarih Müzesi, Arkeoloji Müzesi, Ulusal Sanat Galerisi ve çok sayıda özel galeri de dahil olmak üzere çok sayıda müze ve galeriyi de ziyaret edebilirsiniz.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="berat">
+						<h2><a href="#"></a>BERAT</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/beratsehir.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Şehirde hayat M.Ö. 6- 5. yüzyılda İliryalıların bir yerleşimi olarak başlamıştır. Daha sonra, M.Ö. 3. yüzyılda, Antipatrea olarak bilinen bir kale şehrine dönüştürülmüştür. Ardından Muzakay ailesinin feodal hâkimiyeti sırasında kale daha da büyümüştür. Kalenin içinde, değerli freskler ve simgeler içeren kiliseler ve ayrıca bir kaligrafi okulu inşa edilmiştir. Benzeri bulunmayan bir şekilde sakinleri bugün bile kale duvarlarının içinde hayatlarını devam ettiriyorlar. Eski kale içinin üç büyük mahallesi, kalenin içinde bulunan Mangalemi ile Gorica ve Kala mahalleleridir.
+Mangalemi'de, kalenin altında, evlerin cephelerinin birbirinin üstünde gibi duran pencereleriyle ünlenen manzarasını görebilirsiniz. Genel olarak, geleneksel bir evin iki katı vardır, ikinci katta ahşap oymalarıyla bombeli pencereleri bulunur. Dik tepede inşa edilen evleriyle Mangalemi'nin görünümü Berat’a ‘Yüzen Pencereler Kenti’ şeklinde bir isim de verilmesine sebep olmuştur.
+Osum Nehri boyunca Mangalemi'nin evleriyle karşı karşıya olan Gorica Mahallesi bulunur. Gorica'nın 1780'de inşa edilmiş kemerli köprüsü Gorica'yı Mangalemi ile birleştirmek için yapılmış önemli bir mimari anıttır.
+Berat kalesindeki Bizans kiliselerinin topluluğu olağanüstüdür. 13. yüzyıldan kale içinde Shën Maria e Vllahernes Kilisesi, Shree Triadha Kilisesi ve Shen Maria'nın post-Bizans abidevi Katedrali ve kalenin dibinde Shën Mëhilli Bizans Kilisesi bulunur.  Shën Mëria  (Azize Meryem) Katedrali, 16. yüzyılın ünlü ikonografçısı Onufri ve oğlu Nikolla'nın yaptığı eserlerin meydana getirdiği müzeye ev sahipliği yapıyor. Sergide birçok isimsiz ressamla beraber Joan Çetiri, Onufër Qiprioti gibi bazı diğer sanatçıların 100'ün üzerinde ikonu görülebilmektedir.
+Gorica'daki Shën Spiridhoni Manastırı'nı da ziyaret edebilirsiniz. 1417'de Osmanlılar Berat'ı işgal ettiler ve bu fetih, kalenin içindeki Xhamia e Kuqe (Kızıl Cami), Xhamia e Plumbit (Kurşunlu camii, 1555), Xhamia Mbret (Hünkar camii, 16. yüzyıl) ve Xhamia e Beqarëve (Bekarlar camii, 1872) gibi İslam inancına dair anıtların yapılması ile damgalandı.
+Ziyaret etmeye değer diğer yerler, 18. yüzyılda inşa edilen çardak binasında yer alan Etnografya Müzesi ve Berat'ın ve Arnavutluğun çoğunu çizen tanınmış bir İngiliz ressam olan Edward Lear Sanat Galerisi'dir. Buna ek olarak Berat, geleneksel yemekleri ile de meşhurdur. Yerel restoranlardaki pula me pårshesh ve çorba e Tomorrit gibi lezzetleri tadılmaya değerdir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="iskodra">
+						<h2><a href="#"></a>İŞKODRA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/iskodra.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>İşkodra, tarih boyunca birkaç kez işgal edilmiştir: İlk önce Romalılar (M.Ö. 168), sonra Sırplar (1040), Venedikliler (1396) ve son olarak Osmanlılar (1479) tarafından işgal edildi.
+Kent, 14. yüzyılda Balshaj'ın feodal prensliği olarak Arnavutluk kontrolüne geri döndü ve 1757'den 1831'e kadar Bushatllinj Pashallëk’ın idari merkezi olarak hizmet verdi. İşkodra, kendi kültürel mirasına sahiptir; bu kentte doğan pek çok sanatçı, müzisyen, ressam, fotoğrafçı, şair ve yazar hem kent ve kent halkı için gurur kaynağıdır. İşkodra'nın başlıca turistik mekanı Rozafa Kalesi'dir. Kentin batısındaki kayalık bir tepenin üzerinde ihtişamlı bir şekilde yükselen kazı ve siperler, günbatımında yalımlı bir tablo haline gelir.
+Şehir, üç nehrin suları ile çevrilidir; Drini, Buna ve Kiri. Korunan kasaba gibi, kalenin Illyrianlardan kalma kökenleri vardır. Tarihçi Tit Liri'ye göre, "Labeatların en güçlü alanıydı." Tüm eski eserlerde olduğu gibi, kalede de meşhur bir mahalli efsane var. Rozafa, aslında kaleyi inşa eden üç kardeşin en gencinin gelininin adıydı. Bu üç adam hiç yorulmadan harç karmada ve taş döşemede çalışmış ancak duvarlar hep aynı gecede çökmüş.
+Günlük işlerindeki belaları defetmek için bilge bir insana danışmışlar. Bilge onlara arkadaşlarını ve ailelerini çağlar boyu sürecek güçlü bir kale ile koruyacaklarını söylemiş. Ancak bunun için eşlerinden birinin kale duvarlarına gömülmesi gerektiğini söylemiş. Kardeşler eşlerini bu tehlikeye karşı uyarmak için hayalkırıcı bir anlaşma yapmışlar ve ertesi gün kocasına öğle yemeğini hangi eş getirirse onun kurban edilmesini kararlaştırmışlar. Ancak ağabeyler sözlerinden dönmüşler ve yalnızca yemeğiyle gelen Rozafa olmuş.
+Kararı duyunca, yeni doğan oğlu ve kocası için ağlamış, ancak kalenin inşa edilebilmesi için kendisinin surların yaşayan bir parçası olması için de izin vermiş. Hem efsaneye hem de yerel folklora göre, kalenin girişinde akan kalkerli su, göğsünün birinden akan süttür ve bebeğini besleyebilmesi için akmasına izin verilmesini istemiştir. Ayrıca oğlunun beşiğini geceleri sallamak için bir ayağının ve bir kolunun da rahat bırakılması için yalvarmış ve gün boyunca ona bakıyormuş.
+Tarihçiler, kalenin özelliklerinden daha az büyüleyici ve daha bilimsel olarak, bir geçmişe sahip olduğunu söylüyorlar. Kale, umum hatlarıyla Balshaj ailesinin hâkimiyetini yansıtmaktadır. Ancak 16. ve 17. yüzyıldan kalma ayrı bir Venedik ateşi, bazı Osmanlı mimarisi ve hatta 18. ve 19. yüzyıllarda Bushatllinj ailesinden bir kaç değişiklik de dahil olmak üzere her biri kendi izlerini ve işaretlerini bırakan yeteri kadar idari dönemden geçti.
+Sonradan, kale duvarları arasında antik çağların meraklılarına kalenin geçmişi hakkında daha fazla bilgi edinebilmeleri ve rahat bir öğleden sonra geçirebilmeleri için geleneksel kıyafetlerin sergilendiği bir müze ile yerel yemeklerin tadıldığı bir restoran eklendi.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="akcahisar">
+						<h2><a href="#"></a>AKÇAHİSAR (KRUJA)</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/akcahisar.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Şehrin adı ve önemi, on beşinci yüzyılda Kruja'yı Osmanlı'ya karşı inanılmaz bir direniş kalesi haline getiren Arnavutların ulusal kahramanı İskenderbeg'in 25 yıllık faaliyetiyle yakından ilgilidir. Gjergj Kastriot Müzesi, beşinci ve altıncı yüzyıllara tarihlenen kale surlarının içinde bulunmaktadır.
+Müzenin kendisi 1981 yılında açıldı. Kaleyi çevreleyen duvarların içinde Etnografya Müzesi ve Dolma Tekke de bulunuyor. Kalenin girişinin yakınında, İskenderbeg dönemine dayanan bir halk pazarı vardır. Burada turistler işlemeli ürünler, halılar, gümüş eşyalar, bakır, kaymaktaşı, telkari, geleneksel kıyafetler, antikalar vb. gibi Arnavut mahalli sanat ürünlerini bulabilirler.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="uskup">
+						<h2><a href="#"></a>ÜSKÜP</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/uskup.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Üsküp'teki canlı tempo, 26 Temmuz 1963'deki yıkıcı depremle durduruldu. Depremde 9 şiddetindeki zelzelede 1.000'den fazla insan  öldü ve 3.000 kadar insan ağır veya hafif şekilde yaralandı. Şehrin toplam bina yoğunluğu aralarında çok sayıda kamu binası, kültürel nesne ve sanayi birimi % 45 oranında ya yıkıldı ya da hasar gördü. 1963 depreminden sonra Üsküp, bir dayanışma örneği olarak doğu ile batı arasındaki kentsel bağlantının yapıldığı daha modern bir şehir haline geldi.
+Skupi, MÖ 13-11 yıllarında Octavianus Augustus yönetimi sırasında bir lejyonel kamp haline geldi. Daha sonra, Skupi, başlıca Roma şehirlerinden biri oldu ve Selanik'ten Tuna'ya giden yolda en önemli yerleşim yeriydi. Kent, 40 hektarlık bir alanı kaplayan dikdörtgen biçiminde ve 3, 2 metre kalınlığında bir duvara sahipti ve bu nedenle bir koloni statüsü elde etti. Kent 518 depreminde yok oldu. Eski Skupi yerleşim yeri üzerinde çeşitli malzeme izleri bulunmaktadır ve 1936'da yapılan kazılar sırasında  antik tiyatronun kısımları bulunmaktadır. Günümüz Üsküp’ü 518 yılından sonra kurulmuştur.
+Yeni Üsküp'ün temelleri muhtemelen altıncı yüzyılın ikinci yarısında Çar I. Justinian tarafından atılmıştır (527-565). Yerleşim Justiniana Prima olarak adlandırıldı. Kale Kalesi'nin, Vardar Nehrinin sol tarafında bulunan hakimiyeti sırasında inşa edildiği kabul edilmektedir. Takip eden iki üç yüzyılda Kumani ve Slay'ların nüfuz etmesi bu kenti yağma ve yıkımın hedefi haline getirdi, bu nedenle şehir yavaş yavaş gelişim gösteriyordu.
+Üsküp dokuzuncu yüzyıldan sonra önemli bir Bizans merkezi haline geldi. Üsküp, 10. yüzyılın sonlarında Samuil İmparatorluğu döneminde Episkoposluk olarak seçildi. Arap coğrafyacı Idrisi, Üsküp’ten on ikinci yüzyılda İskubia adında zengin bir şehir olarak zikreder.
+Üsküp, Makedonya Cumhuriyeti'nde coğrafi konumunun uygunluğu ve hinterlandının geniş olmasının yanı sıra, ülkedeki diğer yerleşim birimlerine karşı da işlevsel rolüyle kendi konumunu belirleyen merkezi bir yerleşim noktasıdır.
+Şehir orta, üçüncü ve dördüncü seviye geniş faaliyet yelpazesine sahiptir. Bu; ülkedeki idari, ekonomik, trafik, kültür-eğitim ve sağlık merkezlerini temsil eder.
+Çar Duşan yönetimi sırasında şehir büyük bir ilerleme kaydetti. Bu dönemde Üsküp Dubrovnik'ten tüccarlar tarafından sayesinde ticari, kültürel ve idari merkez oldu ve zamanla zenginleşti. Üsküp'te o dönemde “Duşan Yasası” yayınlandı.
+Osmanlı döneminde Üsküp gelişmeye devam etti. Türkler, Küçük Asya'dan Üsküp'e taşındı. Çok sayıda cami, hamam (Hamam) ve hanlar inşa ettiler. Kapalıçarşı'da Khurhumli (Kurşunlu han), Rumeli beylerbeyi tarafından yaptırılan Davut Paşa Hamamı gibi. Vardar Nehri üzerindeki Taş Köprü on beşinci yüzyılın ilk yarısında inşa edilmiştir. Köprü kentin eski bölgesini yenisine bağlar. Üsküp su kemeri, on beşinci yüzyılın sonunda eski Üsküp - Kaçanik'te yolu üzerinde inşa edilmiştir.
+On dokuzuncu yüzyılın başlarında daha iyi su temini için belirli tadilatlar gerçekleştirilmiştir. Spas Kilisesi (Aziz Halaskar), onyedinci yüzyılın sonlarına doğru inşa edilmiştir. Onyedinci yüzyılda şehir, ekonomik, kültürel ve bölgesel refahın yanı sıra gelişmiş işçilik, ticaret ve deri işlemeciliği ile meşhurdu. Üsküp, 1689 yılında Avusturya generali Piccolomini'nin emriyle yakıldı ve izleri nedeniyle tamamen yok edildi.
+Üsküp, eski ihtişamına uygun şekilde  uzun süre restore edilemedi. Kent, on dokuzuncu yüzyılda, özellikle 1873'te Vardar Demiryolunun inşasından sonra yeniden gelişmeye başladı. 1888'de Morava ve Vardar Demiryolunun birbirine bağlanmasıyla daha da gelişmiştir. Sakinlerinin sayısı sürekli olarak artıyordu. 1836'da 10.000 olan nüfus; 1858'de 20.000 kişiye, on dokuzuncu yüzyılın sonunda nüfus 32.000 kişiye, Balkan Savaşlarında 47.000 kişiye kadar yükseldi.
+Goce Delchev köprüsünün korkulukları üzerinde 26 meşale oyuğu ve köprünün iki tarafında 76 sel ışıkları vardır. 5 metre yüksekliğinde ve 5 ton ağırlığa sahip dört bronz aslan, yüksekliği 3.5 metre olan platformların üzerinde bulunmaktadır.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="ohri">
+						<h2><a href="#"></a>OHRİ</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/ohri.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>UNESCO koruması altındaki Makedonya’nın incisi müze şehir.
+Ohri, Makedonya'nın en eski yerleşim yerlerinden biridir ve kökeni antik döneme kadar uzanır. Günümüzde, Makedonya Cumhuriyeti'nde turizm için en gelişmiş ve en çekici kenttir.
+0hri, Makedonya Cumhuriyeti'nin güneybatı kesiminde Ohri Gölü'nün kuzeydoğu kıyısında bulunan bir şehirdir. Trafik bağlantıları Üsküp, Bitola (Manastır), Debar ve Arnavutluk’ sınırınadır. Adriyatik Denizi ile Akdeniz'i birbirine bağlayan Via Egnatia'da bulunur ve bu geçmişte Ohri'nin gelişmesi için önemli bir nokta olmuştur.
+
+Ohri yakınlarında bazı yabancı ülkelere hava trafiği bağlantısı bulunan Ohri Havaalanı var. Ohri Gölü'ndeki taşımacılık ve trafiğin önemli bir yeri yoktur, göl genellikle turistler için gezi ve balık avlama amaçlı kullanılır. Bir demiryolu istasyonun olmaması şehrin tek dezavantajdır. M.Ö. 3.yy'da mevcut Ohri yerine Lychnidos vardı. Bu önemli ve kendi halinde şehir Roma yönetimi tarafından fethedildi ve Via Egnatia yolu boyunca önemli bir yerleşim noktası haline getirildi. Zengin ve muhkem bir şehir olan Lychnidos Bizans egemenliği altına girdi.
+6. ve 7. yüzyılda Bizans ordusu ile Slav kavimleri arasında değişik zamanlarda çatışmalar yaşandı. Lychnidos, Slavlar tarafından kent fethedildikten sonra Ohri olarak yeniden adlandırıldı. 879'da Ohri, Episkopallık oldu ve 886'da St. Kliment ve St. Naum'un gelişiyle de bu yerleşim bir kültür merkezi haline geldi. Aziz Cyril ve Aziz Methodius'un öğrencileri Slav okuryazarlığını ve edebiyatını yaymaya başladılar. Ohri, Çar Samuil döneminde Makedon devletinin başkentiydi. Kalenin 476 yılına dayanan en eski verilere dayanarak kentin eski kesiminde iyi bir şekilde korunmuş olduğu görülmektedir. Samuil'in ölümünden sonra kalesi yıkılmış ve tekrar inşa edilmiştir. Kale Osmanlı İmparatorluğu döneminde de kullanılmıştır. Ohri de el sanatları ve ticaret gelişmişti ve 12. ve 13. yüzyıllarda ticari bir merkez halini almıştı.
+Balkan Savaşları'ndan sonra, Ohri'deki nüfus Türklerin göç etmesi nedeniyle azaldı. Birinci Dünya Savaşı ile İkinci Dünya Savaşı arasındaki dönemde az bir gelişme gösterdi. Nüfus ve ekonomik ilerleme, İkinci Dünya Savaşı'ndan sonraya rastlar. Nüfus artışı, savaşlardan sonraki dönemden bu yana daha belirgin bir hale büründü: 1948'de 11.169 kişi, 1981'de 39.093 kişi ve 2002'ye kadar yaklaşık 50.000 nüfusa sahipti. Nüfus rakamları 1961'den 1994 yılına gelince iki katına çıktı. Ohri'nin seçkin bir turist pazarı vardır etrafındaki bölgelere göre. Ohri ekonomisinin önemli gelirleri balıkçılık, sanayi ve zanaattır. Şehir altyapısı gelişmiş olan Ohri, çevresine bir çekim merkezi oluşturmaktadır. Her neyse, turistin önemini belirttiğimiz zaman, Ohri, devlet sınırlarının da ötesine geçen büyük bir cazibe gücüne sahiptir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="struga">
+						<h2><a href="#"></a>STRUGA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/struga.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Struga Belediyesinde turizmin başlıca özellikleri şunlardır: nispeten elverişli coğrafi konumu ve nispeten gelişmiş karayolu altyapısı, tüm yıl boyunca yüksek miktarda güneş ışınlarına maruz kalan hafif ılıman iklim, endemik bitki ve hayvan türlerinin olağanüstü faunası sayılabilinir. İyi korunan ve muhafaza edilen tabiatıyla Struga, kış turizmiyle, geleneksel misafirperverliği ve adetleriyle, sağlıklı ve mahalli mutfağıyla, benzersiz kültürel yaşamıyla da turizm için en uygun vasatı sunmaktadır. Ayrıca birbiri ardına sıralanan dağ aralıkları ile önemli bir dizi anıt ve arkeolojik alana sahip zengin bir kültürel ve tarihi mirasa sahiptir. Struga, Makedonya’nın güneybatı kesiminde Ohri Gölü'nün kıyılarında ve şehri iki yakaya ayıran Kara Drim Nehri'nin kenarlarına yerleşmiştir.
+Struga, komşu bölgelerle oldukça kolay erişilebilir bir noktadadır: Arnavutluk sınırına sadece 14 km uzaklıkta, Kalkandelen'den Kosova'ya 160 km, kuzeyde (Üsküp'ten) 190 km, Yunanistan’a 100 km, Bulgaristan’a 290 km ve Sırbistan sınırına 230 km’dir. Sadece 9 km uzaklıktaki Uluslararası Havaalanı da Struga'yı dünyanın geri kalanıyla bağlar.
+Struga, alan olarak 573 km2 ve deniz seviyesinden 698 metre yüksekliktedir. 50 mahallede 63376 nüfusa ve 130kişi/km2 yoğunluğa sahiptir. Ortalama sıcaklık Temmuz ve Ağustos aylarında maksimum 27 dereceye, ancak yazın en sıcak günlerinde 35-40 dereceye ulaşır. Yaz boyunca Ohri Gölü'nün suyunun ortalama sıcaklığı 26 derece santigrat, yıl ortalaması sıcaklık 12 derece kadardır. Kışın ortalama sıcaklık 0 santigrat derecenin üstünde olduğu için rahat ve keyifli bir ortamda gezilir ve tatil yapılır. Yoğun olarak Temmuz ve Ağustos aylarında nispeten yüksek sıcaklıklara sahip olan ortalama gün sayısı 80 gündür. Struga'daki yıllık güneşlenme miktarı çok yüksek olup 2,200 saat ile Struga, Makedonya Cumhuriyetinin en güneşli yerlerinden biridir.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="kalkandelen">
+						<h2><a href="#"></a>KALKANDELEN (Tetovo)</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/kalkandelen.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Kalkandelen, Makedonya'nın en eski şehirlerinden biri olup iki uluslararası koridorun kavşağında bulunmaktadır- Koridor 8 Kalkandelen'den, Koridor 10 ise Kalkandelen'e 40 kilometre uzaktan geçer.
+Kalkandelen, 450-500 metre arasında değişen yükseklikteki Şar Dağı eteklerinde yer almaktadır. Kentin yeni kısmı büyük ölçüde düzlük alandadır, eski şehir ise büyük kısmı itibariyle Baltepe’de (806 metre rakımlı) üzerine yayılmıştır.
+Kalkandelen, birkaç önemli trafik yolunun kesiştiği Dolni Polog'un (Aşağı Polog) merkezi bir noktası olarak mükemmel bir konuma sahiptir. Komşu şehirler Üsküp ve Gostivar’a Adriyatik Anayoluyla Vratnica ve Jazhince güzergâhından karayolu ile bağlanmaktadır. Kalkandelen’in Batı Makedonya ve Üsküp’e demiryolu ile de bağlantısı bulunmaktadır.
+Yerleşim yeri olarak ilk defa on üçüncü yüzyılda Htetovo şeklinde bahsedilmektedir. En eski yerleşim, Şar Dağı'ndan Pena Nehri'nin çıkışında, Tetovo Tanrının Anası Manastırı'nın etrafındaydı. Ondördüncü yüzyılda Tetovo Tanrı Anası adına büyük bir şenlik düzenlendi. On beşinci yüzyılın ortalarında bu yerleşim Kalkandelen olarak yeniden adlandırıldı.
+15. yüzyılda başlayan Osmanlı egemenliğinin başlangıcından yıkılışına kadar Kalkandelen'de inşa edilmiş çok sayıda idari ve İslami kültüre ait binalar: camiler, tekkeler, yoksullar için aşevleri, hamamlar ve şadırvanlar inşa ettiler.
+Kalkandelen, Osmanlı yönetiminin yıkılışına kadar önemli bir yerleşim birimi olmayı sürdürdü. Balkan Savaşları sonrasında belirgin bir nüfus artışı yaşanmıştır. Bununla birlikte özellikle İkinci Dünya Savaşı'ndan sonra nüfus ve ekonomi açısından büyük bir gelişme görülmüştür. Kent;  o tarihten sonra ekonomik, idari, siyasi ve kültürel açıdan çağdaş bir merkezin bütün özelliklerini elde ettiği bir yapıya kavuşmuştur. Kalkandelen, yirminci yüzyılda bölgesinde dikkat çeken bir ticari el sanatları ve sanayi merkezi olmuştur.
+Şehrin etnik yapısı çok çeşitlidir. Kalkandelen'de nüfus 1948'den 1994'e kadar sürekli artış göstermiştir.
+Nüfus 1971'den 1994'e kadar yaklaşık üç kattan (1948 - 17.132, 1961 - 25.357, 1981 - 46.523, 1994 - 65.318, 2002'de 70.000) fazla artmıştır. Yüksek nüfus artışında özellikle Arnavutlar’ın yüksek doğum oranı öne çıkmıştır.
+Başta meşhur elması olmak üzere meyve, mısır ve fasulye olmak üzere sebze yetiştiriciliğiyle ziraat şehirde öne çıkan bir yere sahiptir. Ekonomik ilerlemede endüstri (ör. Elektrometalürji, tekstil ve gıda) de önemli yer tutar. Ayrıca el sanatları, ticaret ve turizmde şehirde gelişmiştir.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="gostivar">
+						<h2><a href="#"></a>GOSTİVAR</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/gostivar.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Gostivar, Batı Makedonya'daki Gorni Polog (Yukarı Polog) bölgesinde bulunmaktadır. Vardar'ın sol tarafında, Üsküp-Kalkandelen-Gostivar-Ohri yolunun kıyısında ve Debar'a ait bir yerdir.  Tercih edilen bir coğrafi ve trafik konuma sahiptir.
+İlk kez, 14. yüzyılda Çar Duşan'ın tüzüğünde bir köy yerleşimi olarak geçmektedir.  15-17. yüzyıllar arasında bu yerleşimle ilgili fazlaca kayıt bulunmamaktadır. Avusturya-Macaristan-Türk Savaşları sırasında ve daha sonraları uzun bir süre köy statüsündeydi.
+Bir kasaba olarak ilk defa 18. yüzyılın 50'li yıllarında bahsedilmektedir. Gostivar’da uğrak noktası olan hayvan pazarı günü vardı. Bu dönemden önce civardaki köy sakinleri Kalkandelen, Kiçevo ve Debar'da hayvanlarını satıyorlardı, ancak bu yerleşimler uzaktı ve yollar güvenli değildi. Pazar gününün başlaması yerleşimin genel ekonomik kalkınmasına da öncülük etmiştir.
+Gostivar Çarşısınin tamamlanması 19. yüzyılın ikinci yarısına rastlar. Gostivar çarşısının Kalkandelen ve Veles'teki tüccarlar ve Prizren'li ustalar tarafından kurulduğu düşünülüyor.
+Gostivar, Makedonya'nın kuzeybatı kesiminde yer almaktadır. ülkenin en uzun nehri -Vardar, Gostivar topraklarından çıkar.
+Vrutok, Makedonya'nın en uzun nehri -Vardar'ın kaynağıdır. Gostivar sakinleri, bölgeye gelen bütün ziyaretçilere bu bölgeyi gezmelerini tavsiye ediyor. Aynı adı taşıyan bir köy de Gorni Polog'da bulunur ve Gostivar'ın güneybatısında on kilometre uzaklıktadır. Kaynak, saniyede birkaç metre küp su kapasitesine sahip olup Makedonya'nın en büyük su  girdaplarından biridir. 150 MW gücündeki HES Vrutok köyünün önündedir.
+19. yüzyılın sonunda Türk idaresi Kalkandelen kazasının daha kolay idare edilebilmesi için miderluk (müdürlük)tesis etti. Bu tarihten sonra Gostivar bir idari merkez statüsüne kavuştu ve 1914 yılından itibaren bir kararname ile de Gostivar, Gorni Polog'un merkezi oldu.
+Balkan Savaşlarından önce, Gostivar'daki nüfus 3.735 idi ve Birinci Dünya Savaşı öncesinde nüfus yaklaşık 4.500 idi. Nüfus artışı ve ekonomik büyüme özellikle İkinci Dünya Savaşı'ndan sonra gerçekleşmiştir. 1948'de nüfusu 8.000 iken 2002'de 35.000'e ulaşmıştır. Gostivar, 1961'den sonra iki kattan fazla büyüyen nüfusuyla en fazla nüfus artışı yaşanan Makedon kenti olmuştur.
+Günümüzde Gostivar Polog bölgesinde idari, ekonomik, kültürel-eğitim ve sağlık merkezleri bakımından daha gelişmiş olan Kalkandelen tarafından sınırlandırılmış olsa da gelişmiş bir ikincil ve üçüncül etkinliklerle modern bir kentsel yerleşimdir. Bununla birlikte, diğer taraftan, Mavrovo bölgesi yaklaşık 90 köy yerleşimiyle Gostivar'a doğru gelişmektedir.
+Gjonovica mağarası
+Gjonovica Mağarası, Gorna Gjonovica köyünün yakınında hatta daha doğrusu Gostivar bölgesinin kaynak noktasında yer almaktadır. 1.000 metre uzunluğundaki kendine has bir mağara şeklindedir. Giriş kısmı birkaç yüz metrelik çoğunlukla kuru mağara dehlizidir ancak ilerisinde mağaranın büyük bölümü boyunca akan bir yeraltı mağara nehri görülür. Sonunda, mağaranın yeraltındaki derinliklerinde muhteşem bir yeraltı şelalesi vardır. Bu, dünyada çok nadir bulunan bir şeydir. Su seviyesi yükseldiğinde, mağaranın ana girişinden dışarı taşar. Bu zamanlarda, ziyaretçilerin bu sorunun üstesinden gelmeleri oldukça zordur.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="manastir">
+						<h2><a href="#"></a>MANASTIR</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/manastir.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Makedonya'nın Kalbi Konsüller Şehri
+İlk konsolosluk, 1851'de Manastır’da Avusturya-Macaristan İmparatorluğu tarafından kuruldu. Manastır, neredeyse doksan yıl boyunca konsolosluk kentiydi ve burada dokuz konsolosla yüz kişilik diplomatik misyon heyeti İkinci Dünya Savaşı'na kadar devam etti. Manastır, Avrupa mimarisi açısından kozmopolit bir şehir haline uzun sürede geldi ve Manastır sakinleri, Manastır’ın 20. yüzyıla faytonlar ve 3.000 piyano ile girişine sıklıkla övgüde bulunurlar.
+Manastır, Makedonya Cumhuriyeti'nin ikinci en büyük şehridir. Cumhuriyet'in güneybatı kesiminde, Pelagonya Vadisi'nde, Baba Dağı eteklerinde, Yunanistan sınırına 13 kilometre uzaklıkta yer almaktadır. Şehir, Kara Drim'in bir kolu olan Dragor Nehri kıyısında bulunur. Manastır’ın Makedonya Cumhuriyeti'nde bölgesel bir merkezi rolü vardır. Manastır’ın trafik ağı kuzeyde Prilep'e, batıda Ohri'ye ve güneyde Yunanistan'a bağlanır. Uluslararası otoyolların güzergahları bu şekildedir. Kichevo ve Mariovo bölgesine doğru giden bölgesel yollar da büyük önem taşır. Veles ve Prilep'den gelen demiryolu Manastır üzerinden geçer ve Yunanistan'daki Lerin, Voden ve Selanik'e doğru devam eder.
+Zurche Azize Atanasij Aleksandriski manastırı, Zurche köyü (1121) - muhteşem ormanlıkta bir kadın ismiyle hâlen yaşayan bir manastır olma özelliği taşır.
+Atanasij Aleksandriski manastırı, Zurche köyünden üç kilometre yukarıda Demir Hisar ve Krushevo arasında dağın içinde yer alır. Kilise 1121'de inşa edilmiş olup tamamen boyanması 1617'de olmuştur. Manastır, mimari formuna göre küçük olup dikdörtgen temellidir ve doğu tarafında beş yüzlü apsisli sunağa sahiptir. Manastır külliyesinde muhtemelen 19. yüzyılın ilk yıllarında yapılmış ve 1895'de yıkılan eski yerleşimler vardır. Yeni yerleşimler Birinci Dünya Savaşı'ndan sonra inşa edilmiştir. Yüzlerce yıldır iyi çalışan bir kütüphanesi ve bir okuma odası vardır.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="resne">
+						<h2><a href="#"></a>RESNE</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/resne.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Resen vadi içinde merkezi bir yerleşim yeridir. Kasaba görece iyi bir coğrafi ve trafik konumuna sahiptir. Otoban burada Drach-Tiran ve Ohri-Manastır-Gratsko güzergahında bu noktadan geçer. Yunanistan'la Arnavutluk'un trafik bağlantısı  Stenje üzerinden sağlanmaktadır.
+Bir yerleşim ismi olan olarak Resne ilk kez 1337'de Kral Duşan'ın bir tüzüğünde geçmektedir. 18. yüzyılın sonunda el sanatları (çömlekçilik) ve ticari gelişim başladı. Yerleşim ekonomik olarak daha da gelişti, ilerleyen zamanlarda Resen Çarşısı kuruldu ve bu yerleşim Prespa'nın ekonomik merkezi haline geldi. 19. yüzyılın başında da bir idari merkez statüsü kazandı.
+İkinci Dünya Savaşı'ndan sonra Resen’de görülen ticari ve demografik artışa şaşmamak gerekir. 1948'de 4737 olan nüfusu 2002'de yaklaşık 9000'e kadar çıkmış olup sürekli artış göstermektedir.
+Bunun nedeni çevredeki yerleşim yerlerinden Prespa vadisine olan göçtür. Yani, Resen, göç alan vadideki tek nokta olup buradan da çoğunlukla okyanus ötesi ülkeleredir.
+Elma dışında bu kasaba, gıda, tekstil ve metal endüstrisiyle de bilinmektedir. Günümüzde, Resne, Prespa Vadisi'nde ekonomi, sağlık, kültür-eğitim ve idari merkez rolü olan modern bir şehir yerleşimidir.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="pristina">
+						<h2><a href="#"></a>PRİŞTİNA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/pristina.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Toplam nüfusu 500 binden fazla olan Priştine Kosova'nın en büyük şehri ve başkentidir. Priştine, uzun geçmişiyle ülkenin kültürel, ekonomik ve idari merkezidir. Arkeolojik keşiflerle şehrin tarihinin Neolitik Çağ kadar dayandığına inanılmaktadır. Priştina'nın Ulpiana bölgesi kentin güneydoğu kesiminde yer alır ve Illyrian Dardania bölgesinin de merkezi olduğu düşünülmektedir. Ulpiana bölgesi 2. yüzyılda İmparator Trajan hüküm sürerken kurulmuş ve 6. yüzyılda Justinian zamanında yenilenmiştir.
+Ulpiana anıtlarına bakılarak denilebilir ki Illyrian Dardanya'nın en güzel şehirlerinden bir tanesidir. Silah, madeni para, mücevher, seramik vb. gibi çeşitli tarihi eşya keşfedildi; bu tür eşyaların birçoğu Priştine'deki Kosova Tarih Müzesi'nde sergilenmektedir.
+İkinci Dünya Savaşı'na kadar Priştine, başkent olmadan önce sadece oryantal bir kasaba görünümündeydi. Bununla birlikte, oryantal görünüm, Priştine’de 18.yüzyılda inşa edilen "eski çarşı" ya da alışveriş caddesinin yok edilmesi de dâhil olmak üzere  Sosyalist Yugoslavya dönemindeki yoğun modernleşmeyle birlikte kentte kentin görünümü önemli ölçüde değişmiştir. O dönem kerpiçten yapılmış evlerin yanı sıra eski ve dar kaldırım taşlı sokakları geniş sokaklarla, göz alıcı yüksek binalarla ve Radyo İstasyonu, Basın ve Yayınevi, Priştine Televizyonu gibi modern komplekslerle değiştirildi. Meclis Binası, Üniversite Kütüphanesi, çeşitli Bankacılık merkezleri ve daha fazlası da şehirdeki yerini aldı.
+Priştine, ülkedeki en önemli entelektüellerin toplandığı Sanat ve Bilim Akademisi'nin ev sahipliğinde Kosova’nın eğitim merkezidir. Priştine, aynı zamanda Tarih Enstitüsü ve Albanoloji Enstitüsü'ne de ev sahipliği yapmaktadır. NEWBORN (yenidoğan) heykeli, Rahibe Teresa Heykeliyle birlikte Priştine; camiler, kiliseler, müzeler gibi birçok esere ev sahipliği de yapmaktadır.
+Priştine'nin en popüler yerleri, şehir merkezine yakın Kafa yöresi (boyun)dir. Burası Azize-Anne Teresa Bulvarıyla Kurrizi (omurga) konut binaları arasında inşa edilmiş olan çeşitli kafe ve diğer oturma mekânları, dükkânlarla tünellerde bulunan satış yerleri de yer alan bir bölgedir. Bu güzel şehir Priştine, yılın dört farklı mevsimini açığa vuran ve yaşayan bir şehirdir. Kosova'da yaz mevsimi, şehrin tüm enerjisinin ve güzelliğinin ortaya çıktığı yılın en eğlenceli ve hareketli zamanıdır. Yaz aylarında şehrin sokaklarında yürürken, kendinizi birçok kafe, mağaza ve diğer mekanlarda eğlenceli vakit geçiren neşeli insanlarla karşılaşırsınız.
+Oteller oldukça pahalı olmasına rağmen Priştine'de çok makul fiyatlarla iyi yemekler servis eden restoranlar da bulunmaktadır.
+Sonunda Priştine biraz tozlu ve çoğunlukla karışık gelmesine rağmen lezzetli yemekler, güleryüzlü insanlar, eğlenceli mekânlar, şaşırtıcı bir gece hayatı ve genel olarak hareketli bir yaşam tarzına sahip olarak bilinir.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="prizren">
+						<h2><a href="#"></a>PRİZREN</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/prizren.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Prizren yaklaşık 130.000 nüfusa sahiptir. Ülkenin en güzel kasabalarından biri olarak kabul edilir. Şehir, bir açık hava müzesi şeklinde olup diğer şehirlere göre de geçmişin mimari fizyonomisini en iyi biçimde koruyan şehirdir. Şehir Şar Dağları'nın arasında ve Bistrica nehri kıyılarında bulunur. Kalaja'nın (Kalesi) altına yapılan konutları sayesinde bu şehir, muhafaza edilmiş mimarisinin bir sonucu olarak özel bir merak uyandırır. Çiçekler ve bitkilerle dolu bahçelere bakan balkonlara sahip haneler ve mahalleler şehre bir tablo havası katar. Prizren, aynı zamanda görenlerde oryantal bir his uyandıran tüm şehri baştanbaşa kestiği düşünülen birçok dar ve dolambaçlı caddeye sahiptir.
+Prizren, zengin gümüş ve altın işlemeleri, "Prizren bezleri", danteller, çeşitli halk el sanatları ve Prizren halkı tarafından yüzyıllardır devam ettirilen diğer ticari sanatlarla ve bu sanatları icra eden ünlü sanatkârlarla dopdolu bir şehirdir. Prizren'in eski mimarisini korumak için çok çaba sarf edilmesiyle beraber İkinci Dünya Savaşı'nın bitiminden bu yana tekstil, ilaç, metal ve gıda sanayileri gibi birçok sektörle modern bir kent haline dönüşmüştür. Prizren şehri, Adriyatik sahilini ve Balkan Yarımadasının iç tarafını birbirine bağlayan birçok eski yola sahip olduğu için önemli bir ticari ve coğrafi konuma sahiptir.
+Kalaja e Prizrenit (Prizren kalesi), şehrin platosuna hâkim bir tepe üzerinde, Prizren şehrine bakmaktadır. Bu kale kenti dış saldırılardan korumak için 11. yüzyılda inşa edildiği biliniyor. Prizren Kalesi, yeraltı tünellerinden meydana gelen gerçek bir labirenttir. 1455'te Osmanlı Türkleri tarafından alınan şehir yüzyıllar boyunca askeri garnizon oldu. Prizren kalesi ‘Kalaja’ tam eski şehrin kurulduğu noktaya denk gelmektedir.
+Prizren şehrinde en eski İslam eseri Bayraklı Gazi Mehmet Paşa camiidir. Caminin kitabesinden 1561 yılından kalma olduğu bilinmektedir. Bu caminin mimarisi sayısız küçük pencere ve kare bir tabandan meydana gelmektedir. Bu caminin avlusunda Mehmet Paşa'nın mezarının bulunduğu altıgen bir türbe de yapılmıştır.
+Kayıtlara göre Sinan Paşa camii 1615 yılında yaptırılmıştır. Bu cami bütünlüğü, sağlamlığı ve zerafetiyle çok nadir bir İslam eseridir. Bu cami konumu ve bulunduğu nokta itibariyle kente hakim bir mevkide yer almaktadır.  Cami; büyük kubbesi, iç süslemeleri, natürmort ve geometrik desenleriyle  açık renklerle boyanmış duvarlarıyla kare bir bina kütlesi üzerine yerleştirilmiştir.
+Öbür tarafta Azize Maria Levishka Kilisesi Prizren'in en eski ayakta duran binalarından biridir. Bu kilise aslında bölgedeki Katoliklerin başlıca kiliselerinden biri olarak inşa edilen bir Roma Katolik Kilisesidir. Sonrasında Doğu Ortodoks Kilisesi'ne dönüştürülmüş.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="zagreb">
+						<h2><a href="#"></a>ZAGREB</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/zagreb.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Zagreb'in Kısa Tarihi
+Bugünün Zagreb’i yüzyıllar boyunca komşu tepelerde gelişen iki ortaçağ yerleşiminden meydana gelmiştir. Şehirle ilgili ilk yazılı kayıt 1094'te Kaptol'da bir piskoposluk kurulduğu tarihten kalmadır. 1242 ise komşu Gradec’in hür  ve müstakil bir idare olarak ilan edildiği tarihtir. Her iki yerleşim de yüksek duvarlar ve hisarlarla çevrili olup kalıntıları halen korunmaktadır.
+Zagrep, 14. ve 18. yüzyıllar arasında Avrupa'da Türk akınları sırasında önemli bir sınır kalesi oldu. 17. ve 18. yüzyıllarda kentin Barok mimarisiyle yeniden inşa edilmesi kentin çehresini değiştirmiştir. Eski ahşap evler yıkılmış, mutantan saraylar, manastırlar ve kiliseler yapılmıştır. Birçok ticari fuar, arazilerden elde edilen gelirler ve birçok zanaat atölyesinin üretimleri şehrin zenginliğine büyük katkıda bulunmuştur.
+Zengin aristokrat aileler, kraliyet bürokratları, kilise asilleri ve Avrupa'nın tamamından gelen zengin tüccarlar şehre taşındılar. Okullar ve hastaneler açıldı ve Avrupa başkentlerinin medeni kuralları kabul edildi. Şehir ortaçağdan kalma sınırlarını aştı ve ovalara yayıldı. İlk parklar ve bağ evleri inşa edildi. Zagreb; Hırvatistan'ın idari, kültürel ve ekonomik merkezi konumunu tescilledi.
+
+Bir milyon kalpli şehir Zagreb
+Hırvatistan'ın başkenti Zagrep kenti, Doğu ile Batı arasındaki tarihi ve siyasi konumundan dolayı, hem kıta ve hem de Akdenizli ruhunu ön plana çıkaran halkının bir yansımasıdır. Zagreb, Hırvatistan Cumhuriyeti'nin kültürel, bilimsel, ekonomik, politik ve idari merkezidir ve Hırvat Parlamentosu, Hükümet ve Cumhurbaşkanına ev sahipliği yapmaktadır. Pannon ovası, Alplerin kenarı ve Dinar dağları arasındaki uygun konumu uluslararası trafik için bir geçiş noktası olmasını netice vermektedir.
+Kent, soğuk kuzey rüzgarlarından Medvednica dağı nın konumu sayesinde korunur  ve geniş bir ovayla ve Sava Nehri sayesinde dünyanın geri kalanına açılır. Yaklaşık 1 milyon nüfusu bulunan Zagrep, Hırvatistan'ın tüm nüfusunun neredeyse dörtte birini barındırır. Yüzyıllar boyu kentin her yerinde Avrupa'dan gelen insanlar otururdu; son yıllarda ise Hırvatistan'ın farklı bölgelerinden gelen insanlar tarafından zengin bir kültürel yaşam ortaya konmaktadır. Zagrep, kapıları daima herkese açık olan güvenli bir şehirdir. Ilginç kişilikleri ile dolu ve fırtınalı bir geçmişi olan bir şehirdir. Zagreb, kendisini tanımak isteyen herkesi samimi bir şekilde davet eden bir şehir olup beklentilerinizi mutlaka yerine getirecektir. Bu şehirde, dikkat çekici insanlarla kolayca tanışabilir, yeni arkadaşlar edinebilir ve size özel anların keyfini çıkarabilirsiniz. Zagreb'in binalarının cepheleri, sokakların ve meydanların, içlerine sinen ve bu başkentin kimliğini şekillendiren birçok kültürün bir araya gelmesinin şahitliğini yansıtırken, zamanın boşluğunu ve gelip geçiciliğini de  yansıtır. Zagreb’e ilk geldiğinizde yapmanız gereken en iyi şey birçoğunun iddia ettiği sadece yerel kadınlarının efsanevi adetlerini sergileyeh harika atmosferini içinize çekmektir.
+
+Zagrep'in iki tepesi
+Arkeolojik keşifler, M.Ö. 35.000 yıllarına kadar gitmektedir. Günümüz Zagrep'inde  Taş devrine ait kalıntılar keşfedildi daha sonra bulunan bulgular ise İliryalıların Avrupa'nın bu kesimine gelişlerinin kanıtlarını ortaya koymaktadır. Keltler daha sonra, muhtemelen dördüncü yüzyılda, uzak kuzeyden bölgeye girdiler. Keltler Romalıların yardımıyla Andautonia adlı kalesi de Ščitarjevo arkeolojik parkında korunmuş olan büyük bir kent merkezi inşa ettiler. Bugün bildiğimiz Zagreb, yani tarihi Orta Çağ'a kadar uzanan ve yerleşimleri iki tepe üzerine kurulan eski şehir Yukarı Kasaba olarak bilinen seküler Gradec ikincisi ise kilise idaresindeki Kaptol’dü.  Zagreb'in ilk yazılı kayıtları Macar Kral Ladislav'ın Adriyatik Denizi'ne giden yolda Kaptol piskoposluğunu kurduğu 1094 yılına dayanır. Şehri çevreleyen Rönesans surları Avrupa'nın bu bölümünde nadir muhafaza edilebilmiş örneklerken Zagreb Katedrali, neo-gotik stille yeni silüeti yansıtmaya devam etmektedir.
+Orta Avrupa'daki Moğol istilaları sırasında burada başka bir tarihi olay meydana geldi ve Zagreb'in çekirdeğinin diğer yarısı olan Gradec'i büyük ölçüde etkileyen bir olay gerçekleşti. 13. yüzyılın ortalarında Tatarlar Macaristan'ı perişan etti ve IV. Kral IV. Béla, halkı kendisine sığınmak için kucak açan Zagreb'e kaçtı. Şükürler olsun, 1242 yılında Béla, Gradec'e kendisine özgür bir kraliyet şehri ilan eden bir emanname verdi. Bu lütfun tekrar tekrar hatırlanması amacıyla merkezî Zagreb'e bakan Lotrščak kulesinde her gün öğlen vaktinde sembolik olarak top atılmaktadır. Orta Çağlarda vatandaşları kentin kapıları kapanmak üzereyken kaleye geri dönmeleri konusunda uyarmak için çan sesi çalınıyordu. Ortaçağdan kalma tek kapı, Kamenita vrata, 18. yüzyılın ilk yarısında yandı. Mucizevî olarak, yangından kalan tek şey Meryem Ana'nın bir simgesi olup hala duvardaki asli noktasında durmaktadır.
+Azize Kamenita Vrata'mız, Zagreb'in koruyucu azizesi olarak kabul edilir ve her yıl 31 Mayıs'ta bir törenle adına ziyafet düzenlenir. Bu gün, Zagreb Günü olarak da kutlanılır. Ortaçağdaki düşmanlar olan iki tepeyi, Medveščak deresi ve değirmenleriyle ayrılıyordu. Dere geçen vadi, Sava nehri kenarında bugünkü Tkalčićeva caddesinin bulunduğu yerdeydi ve hala altından ırmak geçiyor. Zamanla düşmanlık azaldı ve şehir vadi boyunca yayılmaya başladı. İki yerleşimin ortasındaki bir ticaret merkezi, şimdi Ban Josip Jelačić'in ana meydanı olan alana dönüştü. Burası kentin kalbi ve tüm Zagrep halkının buluşma noktasıdır. Ayrıca şehrin adının nasıl verildiğinin bir efsanesi da var. Hararetli  bir günde cesur bir vali savaştan bitkin ve susamış bir halde çıkmışken Manda adlı bir kızdan ona dereden biraz su getirmesini istiyor (zagrabiti). Bu Manduševac halini aldı ve şehir de Zagrep oldu.
+
+Tek yürek Zagreb
+Tepelerdeki ikiz yerleşim zamanla gelişti. Barok konak ve kiliseler 17. ve 18. yüzyıllarda inşa edilmiştir. Cizvitlertarikatının adına inşa edilen Aziz Katerina Kilisesi, Barok tarzı mimarinin en iyi korunmuş örneklerinden biridir. 17. yüzyılın ikinci yarısında Zagreb, Avrupa'daki en uzun zamandan beri var olan, bir üniversite merkezi oldu. Bu arada Zagreb de hükümet merkezi oldu. Dini şehir ile serbest kraliyet beldesi arasındaki farklar yavaş yavaş kayboldu ve ikisi nihayet 1850 yılında 15.000 nüfuslarıyla  birleşmiş Zagreb kentini oluşturmak üzere birleştiler. Yeni şehrin konumu engelsizce büyümeyi sağladı ve Zagreb Sava nehri vadisi boyunca yayılmış oldu. 19. yüzyılın ikinci yarısında sanayi üretimi, ticaret, ulaşım ve bankacılığın gelişimi kentin yeni görünümüne damgasını vurdu.
+1862'de Zagreb, günümüzde de varlığını devam ettiren bütün diğer merkez Avrupa başkentleriyle bağlantılı olan demiryolu bağlantısına sahip oldu. Şehir çizilen hatlar boyunca gelişmeye başlamıştı. Şehir planlama şeması, tüm caddelerin düz ve aynı genişlikte olması ve tüm binalarında aynı tür ve yükseklikte olması gerektiğini kesinlikle vurgulamaktadır. 19. yüzyılın neo-stilindeki geniş meydanlar ve anıtlar günümüzde Zagreb’in görünümünü oluşturan birçok park ve yeşil alan arasında rahatlıkla görülmektedir. Praška bizi ana meydandan sözde Yeşil Atnalı'na götürür. Viyana'daki dairenin aksine değil, bu açık yeşil alan serisi, 'u' harfi şeklinde meydana gelmiş ve önemli kamu hizmet binalarını içerir. Yeşil alanların kentsel mimariye, fıskiyeler ve köşklere oranı dikkatle hesaplanmıştır.
+Burada, ana tren istasyonu Glavni kolodvor'un yanı sıra Bilim ve Sanat Akademisi, Üniversite Kütüphanesi, Ulusal Tiyatro, soyluların sarayları ve çok sayıda eğitim müessesesi bulunmaktadır. Hırvatistan, Avusturya-Macar ikili monarşisinin bir parçası olduğunda, sarı tonlu cepheler ve at kestaneleri dönemin çizgilerini yansıtır. Eski Üst Şehir, açıkça belirlenmiş yeşil alanlarla ve özenle yerleştirilmiş anıtlarla sistematik olarak düzenlenmiş bir alan haline gelmiştir. Aşağı Şehir çevresindeki bina girişleri, toplu yollar ile konut avlularının özel alanıları arasında bağlantı oluşturmaktadır. Küçük kasaba ve lüks Orta Avrupa metropolünün bu atmosferik karışımı, Zagreb'i on dokuzuncu yüzyılda hesaba katılması gereken çağdaş kentlerin seviyesine yükseltmiştir.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="zadar">
+						<h2><a href="#"></a>ZADAR</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/zadar.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Zadar Tarihi
+Zadar, Hırvat Adriyatik'inin merkezinde, tarihi ve kültürel abidelerle dolu eski bir şehirdir. Üç bin yıllık, eski, fırtınalı ve dinamik bir tarihe bir tarihe sahip olan kent; tarih içinde yıkıldı, yağmalandı, harap edildi ancak küllerinden her zaman daha güçlü, daha zengin ve daha güzel şekilde ortaya çıktı. Zadar, tarihte ilk kez M.Ö. 4. yüzyılda ortaya çıktı. Şehrin tarih boyunca günümüze kadar eski isimleri Liburiyenlerin Ilirya kabilesine göre Jader, Idassa (Yunan kaynağı), Jadera  (Roman kaynağı), Diadora ve  Zara (Venedik idaresinde ve daha sonra İtalyanca)’dır. Bugünkü ismi ise Zadar’dır.
+
+M.Ö. 59 yılından sonra Zadar bir Roma belediyesi ve M.Ö. 48'de Roma vatandaşlarının bir kolonisi oldu. Roma yönetimi sırasında Zadar, bir ana meydan “forum” ve düzenli bir karayolu ağına sahip bir kentin özelliklerinin yanında bir tapınağı da bulunan yüksek bir kapitolyumdu. 7. yüzyılda Zadar, Dalmaçya'daki Bizans temasının (vilayet) merkeziydi (başkent). 9. yüzyılın başında Zadar, piskopos Donatus’la Bizans lider Paulus'un başkenti olarak anılıyordu. O zamanlar Roma Forumu'nda Kutsal Teslis Kilisesi adında bir kutsal kilise kuruldu. Bugünkü ismiyle Aziz Donat’ın şehrin simgesi olduğu söylenebilir. Hırvatların Zadar'a gözle görünür şekilde yerleşmelerinin 10. yüzyılda olduğu söyleneblir. Romalıların Azize Meryem kilisesinin, Aziz Grisogone kilisesinin ve Azize Anastasia katedralinin temelleri o dönemden kalmıştır. 1202'de şehir Haçlılar ve Venedikliler tarafından alındı ve yakıldı. Dalmaçyadaki ilk Gotik kiliseler Aziz Francis ve Aziz Dominic o zamandan sonra inşa edildi ve o dönemden Aziz Simeon'un altın kaplama gümüş lahitleri dönemin hazineleri arasında öne çıkmaktadır. 15. ve 16. yüzyıllar Hırvatların milli dilleri olan Hırvatçada yazılar yazaz yazarların (Petar Zoranić, Brne Krnarutić, Šime Budinić, Jerolim Vidulić ...), öne çıkan faaliyetleriyle göze çarpmaktadır.
+Venedikliler'den sonra Zadar’ın idaresini 1797’de Avusturyalılar (1806'dan 1813'e kadar Fransızlar aldı. Kısa süren Fransız idaresinin ardından Zadar, 1918 yılına kadar tekrar Avusturya yönetiminde kaldı. Rapallo Antlaşması ile Zadar, İtalyan yönetimine girdi ve II. Dünya Savaşı'ndan sonra ise Hırvatistan'a (Yugoslav Federasyonu çerçevesinde) eklendi. Hırvatistan'ın bağımsızlık ilanından ve Sırbistan'ın Hırvat topraklarına saldırısından sonra, Zadar ve çevresi Ekim 1991'de saldırıya uğradı. Sırp isyancılar şimdiye kadar daha önce hiç görülmemiş yıkıcı bir kuvvetle kenti ve bölgeyi almayı ve yok etmeyi hedeflemişlerdi. Zadar'ın çevresi isyancılar tarafından kontrol edildi ve önemli ölçüde harap edildi. Şehrin kendisi ise tekrar tekrar saldırıya uğradı ve Zadar'ın kültürel mirası ağır hasar gördü.
+
+Bugün Zadar, çeşitli tarihi devirlerin ve kültürlerin korunmuş bir sahası olup bu medeniyetlerin sınırlarının ve şehir mimarilerinin ana hatlarıyla belirlendiği bir yerdir. Tarihinde Zadar, uzun yüzyıllarca Ilyrian Liburni'nin evi ve 1000 yıl boyunca da Dalmaçya’nın başkenti idi. Tarihçe zengindir, medeniyetçe günümüzde bir odak noktasıdır, ve hemen bütün şehirce tartışılmaz şekilde istikbale ait hedefi: Adriyatik, Akdeniz ve uluslararası bir metropol olma yolunda kabul edilmiş bir kalkınma konsepti gerçekleştirmek. Günümüzde zenginleşmiş Hırvat ulusal kimliğiyle beraber küreselleşme ve enformasyon alanında da en yeni trendlere başarıyla intibağı olan bir şehirdir.
+Zadar, maddi ve manevi kültür bakımından zengin olduğu kadar günümüzde kendisine biçilen turistik kimlik bakımından da oldukça zengin bir kenttir. Zadar, Roma forumunun etrafına inşa edilmekle birlikte bakımlı duvarlar ve eski Hırvat eserlerinin bulunduğu bir kenttir. Arşivlerden, müzelerden ve kütüphanelerden oluşan bu eser, edebi ve müzikal hazinenin bekçisi, içinde Hırvat halkının en eski üniversitesi (1396) bulunan yerdir. Bu yerde çok uzun zaman önce Hırvatça ilk roman ve Hırvat dilinde basılan ilk gazetenin yayına başladığı noktadır. Bu şehir, dört muhafız aziz tarafından korunmaktadır: Zoilo, Simeon, Grisogone ve Anastasia.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="split">
+						<h2><a href="#"></a>SPLİT</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/split.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Split'in hikayesi, Roma İmparatoru Diocletian'ın, hayatının son yıllarını geçirmek istediği büyük Roma kenti Salona'nın yakınında aray inşa etmeye karar verdiği zamana kadar uzanan 17 yüzyıllık bir hikayedir. Bu 1700 yıl boyunca Saray, günümüze kadar zengin geleneği, görkemli geçmişi ve doğal ve kültürel mirasının güzelliği ile yavaş yavaş cazip bir şehre dönüştü.
+Diocletian Sarayı ve Split'in tüm tarihi merkezi, yalnızca Sarayın olağanüstü korunması için değil, aynı zamanda Saray ve şehrin (veya kentin ve Sarayın, nasıl dilerseniz) dört dörtlük bir yaşam sürdürmeye devam etmeleri için 1979'dan beri UNESCO Dünya Mirası listesinde yer almaktadır. Eski Roma'dan ve ortaçağdan bugüne kadar tüm tarihi katmanlar bu yapı üzerinde halen görünmekte ve canlılıklarını korumaktadırlar. Antik kent gezintinizde, Peristyle, ortaçağ Romanesk Kilisesi ve Gotik Sarayı, burjuva evlerin Rönesans portalları, Barok cepheler ve modern mimarinin mükemmel birleşiminin bir zengin mirasla ne şekilde ortaya konulduğuna harika örnekleriyle güzergahınız boyunca şahit olacaksınız.
+Bu zengin kültür, Split'in günlük yaşamına yansır. Yöre sakinleri, Split'e gelerek kentin ve ritimin bir parçası haline gelmiş oldukları izlenimini veren, turistlerle aynı mağazalardan alışveriş yaparlar  aynı kafede, restoranda, dükkanda otururlar. Riva, Şehre gelen her konuk kahvesini 200 bin kişilik Split’in gürültülü ve hararetli sosyal hayatını yansıtan Riva’da tatmalıdır. Aynı şekilde Riva nasıl şehrin mizacını ortaya koyuyorsa sebze ve balık pazarı da Split'teki her bir ailenin  hayatının merkezi olduğunu ortaya koyar.
+Split, görkemli mimari manzarasından çok daha fazlasıdır. Ayrıca Split, mükemmel bir mutfak ve içecek, film ve tiyatro festivalleri, sergiler, mükemmel müzeler ve konserler, sayısız kültürel aktiviteler, sokak şenlikleri, çeşitli kulüp ve barlarla başlayan eklektik eğlence tarzları ve her yıl yaklaşık dünyanın 100 ülkesinden 100 bin kadar genç tarafından ziyaret edilen Ultra Avrupa Festivalidir. Spordaki başarılarıyla da öne çıkmış olmasıyla övünmesini, dünyanın dört bir yanındaki sadece bir avuç şehir böyledir, bir düzine Olimpiyat madalyası kazananının yanı sıra diğer spor madalyalarının evi olmasına borçludur.
+Şehrin koşuşturmasından yorulursanız şehrin sembolü olan Marjan tepesi; ormanı, koşu yolları, dağcılık ve bisiklet imkanları, yeşil alanları ve ayrıca vefat eden Split vatandaşlarının manevi huzura erdikleri eski kiliseleri ile yanıbaşınızda olacaktır. Aynı zamanda, Split büyüklüğünde bir şehre göre olağanüstü temiz denizi olan sayısız kumsalları, en tanınmışı Bačvice'den Marjan'ın etrafındaki taş ocağına kadar olan tüm tabii cennetleri birarada bulmak çok sıra dışıdır.
+</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+
+					<!--Blog Post-->
+					<div class="row blog blog-medium margin-bottom-40" id="ljubjlana">
+						<h2><a href="#"></a>LJUBLJANA</h2>
+						<div class="col-md-5">
+							<img class="img-responsive" src="{% static "img-temp/cities/tabs400x250/ljubljana.jpg"%}" alt="">
+						</div>
+						<div >
+							<h3></h3>
+							<p>Ljubljana'nın efsaneye göre, Kral Aetes'ten altın postunu çalıp olan Karadeniz, Tuna, Sava ve Ljubljanica nehirleri yoluyla kaçtığına inanılan, Yunan mitoloj kahramanı Jason ve onun Argonauts arkadaşları tarafından kurulduğuna inanılmaktadır.
+Ljubljanica kaynağının yakınındaki büyük bir gölün kenarındaki bataklıkta durdular, burada gemilerini Adriyatik Denizi'ne taşımak, tekrar bir araya getirmek ve Yunanistan'a dönmek için söktüler. Mola verdikleri göl, bir canavarın da yaşadığı yerdi. Jason canavarla savaştı, onu yenip öldürdü. Günümüzde Ljubljana Ejderhası adı verilen bu canavar yrini Ljubljana kalesinin üzerinde bulmuştur.
+Ljubljana, M.Ö. 2000 yıllarında Ljubljana Bataklıkları üzerinde bataklık ya da göl yatağına dikilen dikmeler üzerine inşa edilmiş ahşap kulübelerde yaşayamaya başlayan göl sakinleri tarafından kurulmuştur. Göl sakinleri çoğunlukla avcılar, balıkçılar, hayvancılık ve ibtidail çiftçilik yapan insanlardı. Çevrelerine ulaşmak için ağaçları kesip gövdelerinin iç kısmını oyarak yaptıkları kayıkları  kano olarak kullanıyorlardı. Ljubljana Gateway, önemli bir coğrafi konuma sahip olduğu için, şimdiye kadar birçok kabilenin ve halkın göç ettiğini görmüştür.
+Mevcut Ljubljana toprakları, ilk olarak Venediklilerin daha sonra sırasıyla İliryalıların, Yapodi adı verilen bir Ilirya-Kelt kabilesinin ve M.Ö. 3. yüzyılda Taurisci adlı diğer bir Kelt kabilesinin yerleşim yeri olmuştur.
+Mevcut Ljubljana'nın en eski adı olan Emona, Roma döneminden beri biliniyordu ancak muhtemelen Kelt kökenli bir isimdi. M.Ö. 1. yüzyılda Ljubljana Havzası Romalılar tarafından fethedilene kadar yerleşim Kelt krallığı Noricum'un bir parçasıydı.
+Mevcut Ljubljana topraklarında, Romalılar M.Ö. 50’li yıllarda önce askeri bir kamp yeri inşa ettiler ve daha sonra Iulia Aemona (Emona) olarak adlandırılan kalıcı bir yerleşim haline geldi. Çok sayıda savaşta stratejik konumuyla önemli bir rol oynayan Emona kalesi kalın duvarlarla güçlendirildi. Bir hükümet görevlisi ve askerler de dahil olmak üzere çoğunluğu tüccar ve zanaat, 5.000 ila 6.000 kişilik bir nüfusa sahipti. Sokaklarına taş döşendi. Evler; tuğladan yapılıydı, merkezi ısıtmalıydı ve şehir kanalizasyon sistemine bağlıydı. Evlerin duvarları sıvalı ve farklı renklerle boyalı, zeminleri mozaiklerle kaplıydı. Emona, diğer şeylerin yanında, gelişen bir ticarete sahip önemli bir Erken Hıristiyanlık merkezi idi. Ljubljana bataklıklarında tapınılan kendi tanrıçası Equrna vardı. Emona, Batı Roma İmparatorluğu ile düşüşüyle birlikte düşüşe geçti.
+452'de Attila liderliğindeki Hunlar tarafından yıkıldı. Kavimler göçü yıllarında şehir alacakaranlık bir görünümdeydi. Slovenlerin Slav ataları, 6. yüzyılın sonunda mevcut Ljubljana topraklarında gelmiş ve mevcut kalenin bulunduğu tepenin güvenli barınağı altında bir yerleşim inşa etmeye başlamışlardır. Yerleşim yavaş yavaş bir ortaçağ kentine dönüşmüştür.
+9. yüzyılda Slav yerleşimleri kademeli olarak Frenklerin egemenliğine girdi. 9. yüzyılda Macarlar sık sık baskınlara uğradı. 1000 yılı civarında, Macarlar Almanlar tarafından yenildi ve toprakları çeşitli Alman soylu ailelerine tahsis edildi. 1112 ve 1125 yılları arasında Aquilea Patrikhanesine Ljubljana kalesi tepesinde küçük bir mülk tahsis edildi. Bunun kanıtını sunan belge, Ljubljana'dan bahseden ilk yazılı kaydı temsil etmektedir. Daha sonra Ljubljana Havzası Spinheim Duke'lerinin Carinthian ailesinin yönetimine geçti.
+Laibach olarak anılan Ljubljana'nın hızlı büyümesi, 13. Yüzyılda, Eski Meydan (Stari trg), Şehir Meydanı (Mestni trg) ve Yeni Meydan (Novi trg) olmak üzere üç kasaba merkezi etrafında başlamıştır. Kasaba beş kapıdan girilirdi ve bu üç meydan daha sonra Kasap Köprüsü (Mesarski most) ve şu anda Cobblers Köprüsü (Čevljarski most) olarak bilinen Aşağı Köprü (Spodnji most, aynı zamanda Špitalski olarak da bilinir) ve Yukarı Köprüyle (Zgornji most) tarafından bağlanırdı.
+1220 yılında Ljubljana'ya kendi parasını basma hakkı da dahil şehir hakları verilmiştir. Şehrin nüfusunun büyük bölümünü oluşturan esnaf, esnaf loncalarında örgütlendi. 1270'de kent, Çek kral Premysl Otakar II tarafından fethedildi, 1278'de ise Karniola eyaletinin (Dežela Kranjska) geri kalanıyla birlikte şehir Hapsburg egemenliği altına girdi. Hapsburg hükümdarı tarafından şehre, Avrupa'nın dört bir yanından çok sayıda tüccar ve esnafı cezbeden 39 kadar ticari ve diğer bazı imtiyazlar tanındı. 1461'de Ljubljana Piskoposluğu kuruldu ve Aziz Nicholas Kilisesi bir katedral haline geldi.
+15. yüzyılda Ljubljana sanatıyla tanınmaya başladı. Ljubljanalı ressam Janez ve Ljubljana Heykel Odası'nın iki atölyesi özellikle iyi biliniyordu. 1511 depreminden sonra şehir Rönesans tarzında yeniden inşa edilmiş ve etrafına yeni bir sur inşa edilmiştir.
+16. yüzyılda nüfusu 5.000 kişiye ulaştığında (yüzde 70'i ana dili Slovence konuşuyordu), Ljubljana; Slovenya’da Reform hareket ve kültürünün merkezi oldu. 1550'de şimdiye kadar Slovence'de yazılmış ilk kitaplar; Primož Trubar’ın Katekizem (Katesizm) ve Abesednik (Abecedary) adlı iki kitabıyla Jurij Dalmatin'in İncil'in Slovence tercümesi yayınladı. Aynı zamanda, Ljubljana ilk sıbyan mektebine, halk kütüphanesine ve matbaaya sahip oldu. Reform dönemini Katolik Kilisesi ve Karşı Anti-Reformasyon'un hakimiyetini sürdürdüğü bir dönem izledi.
+1597'de Cizvitler Ljubljana'ya geldi ve daha sonra bir kolej haline getirilen bir lise  kurdular. 17. yüzyılın sonlarında, başka şeylerle birlikte Ljubljana'ya birtakım yabancı mimar ve heykeltıraşları davet ederek Rönesans'ı Ljubljana'ya taşıyan ve Ljubljana’yı Barok bir şehir görüntüsüne sokan İtalyan dernekleri üzerine kurulu bir akademisyen birliği olan “Academia operosorum” kuruldu. Birçok evin cephesi yenilendi, aslen iki katlı olan binalara üçüncü katlar ilave edildi ve evlerin içi de kemerli avlu ve merdivenlerle süslendi. Ayrıca kiliselerin çoğu ya yenilenmiş ya da Barok üslupta inşa edilmiştir. Ljubljana'daki Barok tacın mücevheri heykeltıraş Francesco Robba'nın eseriydi.
+1701 yılında İtalya dışındaki ilk müzik derneklerinden biri olan Academia philharmonicorum' kuruldu. Filarmoni Topluluğunun fahri üyeleri, Academia philharmonicorum' başarılı ilk  üyeleri de olan, besteciler Josef Haydn, Ludwig van Beethoven, Johannes Brahms ve keman sanatçısı Niccolo Paganini idi. Gustav Mahler, 1881-1882 yıllarında Topluluğun şeflerinden biriydi.
+18. yüzyılda birçok fabrikanın Ljubljana'da kurulmasıyla beraber ekonomik açıdan şehir hala transit olarak önemli bir yer tutmaktaydı. 1809 ile 1813 yılları arasındaki Fransız işgali sırasında Ljubljana İlirya eyaletlerinin başkentiydi. Resmi dilleri Slovence oldu ve ilk kolej Ljubljana'da açıldı. Lúubljana, Avusturya yönetimi altındaki Ljubljana 1821 tarihinde birçok Avrupalı ​​yöneticinin katıldığı ve halkların uyanışını siyasi bağımsızlık ve istiklaliyet elde etmeye çalışmaktan geri durmaları istenen Kutsal İttifak Kongresine ev sahipliği yaptı. Bu kongreye ev sahipliği yapmanın hatırasına Kentin ana meydanlarından biri Kongre Meydanı (Kongresni trg) seçildi.
+19. yüzyılın ilk yarısında Ljubljana'nın görünümü önemli ölçüde değişti. Ljubljanica nehri kıyıları temizlendi ve nehir boyunca birçok taş ve demir köprü inşa edildi. O dönem, Slovenya'nın en büyük şairi Fransız Prešeren Ljubljana'da yaşadı ve eserlerini bu şehirde verdi. 1849 yılında ilk tren bağlantısı Viyana'yla gerçekleşti ve sekiz yıl sonra Ljubljana'yı Trieste'ye bağlayan demiryolu inşa edildi. 1869'da nüfus 22.593'e ulaştı. 1860'larda “Sloven Society” kuruldu. Ljubljana tüm Slovenler için kültür merkezi haline geldi. 1895 yılında yıkıcı bir deprem geçirdi sonrasında Avusturyalı ve Çek mimarlar tarafından yeniden inşa edildi. Birkaç yeni sokak ve çok sayıda “Art Nouveau” tarzında bina inşa edildi.
+19. yüzyılın sonlarında, Ljubljana'ya Su işleri (1890), Kamu elektrik arzı ve Modern bir kanalizasyon sistemi (1898), Tramvay hizmetleri (1901) ve Sinema (1907) gibi bir dizi yenilik getirildi. Kent I. Dünya Savaşı'ndan yalnızca uzaktan ve dolaylı şekilde etkilenmiştir. Avusturya-Macaristan imparatorluğunun parçalanmasından ardından 1918'de Ljubljana; Sırp, Hırvat ve Sloven Krallığı'nın bir parçası olarak Slovenya'nın idari, siyasi ve kültürel merkezi haline geldi. Krallık süresince kent; Ljubljana Üniversitesi (1919), Ulusal Galeri (1918) ve Bilim ve Sanat Akademisi'nin (1938) kuruluşuna şahit oldu.
+1930'ların ortalarında, 80.000'den fazla nüfusu vardı. Özellikle Bežigrad bölgesinde modern fonksiyonel mimari ilkeleri üzerine yeni konut bölgeleri inşa edilmiştir. İki Dünya Savaşı arasındaki dönemde mimar Jože Plečnik, Ljubljana'nın görünümüne güçlü bir damga vurmuştur; eserlerinde Roman Barok ve Germen Art Nouveau stilleri arasında uyumlu bir birleşim sağlamıştır. Döneme ilişkin kişisel izleri o kadar güçlüdür ki, dönemin mimarisi Plečnik'in Ljubljana'sı olarak anılmaktadır.
+II. Dünya Savaşı sırasında kent ilk olarak İtalyan ve daha sonra Alman ordusu tarafından işgal edildi. Güçlü direniş hareketini kırmak için işgalciler 1942'de Ljubljana'yı 30 kilometrelik dikenli bir tel örgüyle kuşattılar, bu tel örgü şimdi şehir etrafındaki bir yürüyüş yolunun güzergahıdır. Savaştan sonra Ljubljana, sosyalist Yugoslavya'yı oluşturan altı cumhuriyetten biri olan Slovenya'nın başkenti oldu. Savaş sonrası dönem, şehrin çok sayıda göç almasına ve genişlemesine yol açan hızlı ekonomik gelişmenin görüldüğü dönemdir.
+23 Aralık 1990'da yapılan mahalli halk oylaması sırasında Sloven vatandaşları, 25 Haziran 1991'de Ljubljana'yı başkent ilan eden hür ve bağımsız bir devlet için oy kullandı. Mayıs 2004'te Slovenya AB'ye girdi.
+Hem Ljubljana sakinleri ve hem de sayısız ziyaretçisi, 276.000 nüfusu ile Ljubljana'yı insanı önceleyen bir şehir olarak görür. Ljubljana, orta büyüklükte bir Avrupa kenti olarak sınıflandırılmasına rağmen hem küçük bir kasabanın keyifli atmosferine  hem de büyük şehirlerin sahip olabileceği her şeye sahiptir.
+Ljubljana, sayısız tiyatro, müze, galeri ve dünyanın en eski flarmoni orkestralarından birine sahip olmasıyla tam bir kültür kentidir. Her yıl 10.000'den fazla kültürel etkinliğe ev sahipliği yapmaktadır. Ljubljana ziyaretçilerinin normalde sahip olduğu ilk izlenim, özellikle kentin 50.000'den fazla üniversite öğrencisinin yarattığı özel atmosfere bağlı olarak Ljubljana'nın son derece genç bir şehir olduğudur. Ljubljana, üniversitesi ve uluslararası çapta ünlü enstitüleri nedeniyle hem dünyanın dört bir yanından iş adamları tarafından yapılan çok sayıda iş toplantıları ve fuarlarından ötürü hem de dünyaca ünlü sanatçıların ortaya koydukları canlı atmosferi nedeniyle her türlü bilim adamının uğrak yeridir. Sayısız uluslararası uzman bu şehirse çok sayıda kongre düzenlemektedir.
+Mükemmel coğrafi konumu nedeniyle Ljubljana, Slovenya'nın pek çok yüzünü ve güzelliklerini keşfetmek için mükemmel bir başlangıç ​​noktasıdır.</p>
+						</div>
+					</div>
+					<!--End Blog Post-->
+
+					<hr class="margin-bottom-40">
+
+
+				</div>
+				<!-- End Left Sidebar -->
+
+				<!-- Right Sidebar -->
+				<div class="col-md-3">
+
+					<!-- Activities -->
+					<div class="posts margin-bottom-40">
+						<div class="headline headline-md"><h2>ŞEHİRLER</h2></div>
+
+						<dl class="dl-horizontal">
+							<dt><a href="#dubrovnik"><img src="{% static "img-temp/cities/tabs/dubrovnik.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#dubrovnik"><b>DUBROVNİK</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#kotor"><img src="{% static "img-temp/cities/tabs/kotor.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#kotor"><b>KOTOR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#budva"><img src="{% static "img-temp/cities/tabs/budva.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#budva"><b>BUDVA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#podgorica"><img src="{% static "img-temp/cities/tabs/podgorica.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#podgorica"><b>PODGORİTSA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#ostrog"><img src="{% static "img-temp/cities/tabs/ostrog.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#ostrog"><b>OSTROG</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#belgrad"><img src="{% static "img-temp/cities/tabs/belgrad.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#belgrad"><b>BELGRAD</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#tiran"><img src="{% static "img-temp/cities/tabs/tiran.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#tiran"><b>TİRAN</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#berat"><img src="{% static "img-temp/cities/tabs/beratsehir.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#berat"><b>BERAT</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#iskodra"><img src="{% static "img-temp/cities/tabs/iskodra.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#iskodra"><b>İŞKODRA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#akcahisar"><img src="{% static "img-temp/cities/tabs/akcahisar.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#akcahisar"><b>AKÇAHİSAR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#uskup"><img src="{% static "img-temp/cities/tabs/uskup.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#uskup"><b>ÜSKÜP</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#ohri"><img src="{% static "img-temp/cities/tabs/ohri.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#ohri"><b>OHRİ</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#struga"><img src="{% static "img-temp/cities/tabs/struga.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#struga"><b>STRUGA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#kalkandelen"><img src="{% static "img-temp/cities/tabs/kalkandelen.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#kalkandelen"><b>KALKANDELEN</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#gostivar"><img src="{% static "img-temp/cities/tabs/gostivar.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#gostivar"><b>GOSTİVAR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#manastir"><img src="{% static "img-temp/cities/tabs/manastir.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#manastir"><b>MANASTIR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#resne"><img src="{% static "img-temp/cities/tabs/resne.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#resne"><b>RESNE</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#pristina"><img src="{% static "img-temp/cities/tabs/pristina.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#pristina"><b>PRİŞTİNA</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#prizren"><img src="{% static "img-temp/cities/tabs/prizren.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#prizren"><b>PRİZREN</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#zagreb"><img src="{% static "img-temp/cities/tabs/zagreb.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#zagreb"><b>ZAGREB</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#zadar"><img src="{% static "img-temp/cities/tabs/zadar.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#zadar"><b>ZADAR</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#split"><img src="{% static "img-temp/cities/tabs/split.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#split"><b>SPLİT</b></a></p>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal">
+							<dt><a href="#ljubljana"><img src="{% static "img-temp/cities/tabs/ljubljana.jpg"%}" alt="" /></a></dt>
+							<dd>
+								<p><a href="#ljubljana"><b>LJUBLJANA</b></a></p>
+							</dd>
+						</dl>
+					</div>
+					<!-- End Activities -->
+				</div>
+				<!-- End Right Sidebar -->
+			</div><!--/row-->
+		</div><!--/container-->
+		<!--=== End Content Part ===-->
+
+
+
+		{% include 'footer.html' %}
+	</div><!--/wrapper-->
+
+	<!--=== Style Switcher ===-->
+	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+	<div class="style-switcher animated fadeInRight">
+		<div class="style-swticher-header">
+			<div class="style-switcher-heading">Style Switcher</div>
+			<div class="theme-close"><i class="icon-close"></i></div>
+		</div>
+
+		<div class="style-swticher-body">
+			<!-- Theme Colors -->
+			<div class="style-switcher-heading">Theme Colors</div>
+			<ul class="list-unstyled">
+				<li class="theme-default theme-active" data-style="default" data-header="light"></li>
+				<li class="theme-blue" data-style="blue" data-header="light"></li>
+				<li class="theme-orange" data-style="orange" data-header="light"></li>
+				<li class="theme-red" data-style="red" data-header="light"></li>
+				<li class="theme-light" data-style="light" data-header="light"></li>
+				<li class="theme-purple last" data-style="purple" data-header="light"></li>
+				<li class="theme-aqua" data-style="aqua" data-header="light"></li>
+				<li class="theme-brown" data-style="brown" data-header="light"></li>
+				<li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+				<li class="theme-light-green" data-style="light-green" data-header="light"></li>
+				<li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+				<li class="theme-teal last" data-style="teal" data-header="light"></li>
+			</ul>
+
+			<!-- Theme Skins -->
+			<div class="style-switcher-heading">Theme Skins</div>
+			<div class="row no-col-space margin-bottom-20 skins-section">
+				<div class="col-xs-6">
+					<button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
+				</div>
+				<div class="col-xs-6">
+					<button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Layout Styles -->
+			<div class="style-switcher-heading">Layout Styles</div>
+			<div class="row no-col-space margin-bottom-20">
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>
+				</div>
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Theme Type -->
+			<div class="style-switcher-heading">Theme Types and Versions</div>
+			<div class="row no-col-space margin-bottom-10">
+				<div class="col-xs-6">
+					<a href="E-Commerce/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="One-Pages/Classic/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">One Page <small class="dp-block">Template</small></a>
+				</div>
+			</div>
+
+			<div class="row no-col-space">
+				<div class="col-xs-6">
+					<a href="Blog-Magazine/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Blog <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
+				</div>
+			</div>
+		</div>
+	</div><!--/style-switcher-->
+	<!--=== End Style Switcher ===-->
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery-migrate.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/bootstrap/js/bootstrap.min.js"%}"></script>
+	<!-- JS Implementing Plugins -->
+	<!--<script type="text/javascript" src="{% static "plugins/back-to-top.js"%}"></script>-->
+	<script type="text/javascript" src="{% static "plugins/smoothScroll.js"%}"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="{% static "js/custom.js"%}"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="{% static "js/app.js"%}"></script>
+	<script type="text/javascript" src="{% static "js/plugins/style-switcher.js"%}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			StyleSwitcher.initStyleSwitcher();
+		});
+	</script>
+	<!--[if lt IE 9]>
+    <script src="{% static "plugins/respond.js"%}"></script>
+    <script src="{% static "plugins/html5shiv.js"%}"></script>
+    <script src="{% static "plugins/placeholder-IE-fixes.js"%}"></script>
+  <![endif]-->
+{% endblock content %}
