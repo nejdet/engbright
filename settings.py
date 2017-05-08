@@ -209,7 +209,10 @@ CMS_TEMPLATES = (
     ('gallery.html', "Gallery"),
     ('aboutus.html', 'aboutus'),
     ('hotels.html', 'Hotels'),
-    ('dailytours.html', 'DailyTours')
+    ('dailytours.html', 'DailyTours'),
+    ('8d7n-tour.html', '8d7n Tour'),
+    ('12d11n-tour.html', '12d11n Tour'),
+    ('sms-tour.html', "SMS Tour")
 )
 
 CMS_PERMISSION = True
