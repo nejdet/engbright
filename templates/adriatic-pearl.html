@@ -1,0 +1,531 @@
+{% extends "tourbaseen.html" %}
+{% load cms_tags staticfiles%}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+	<div class="wrapper">
+		<!--=== Header ===-->
+		<div class="header">
+			<div class="container">
+				<div class="col-md-4" >
+					<!-- Logo -->
+					<a class="logo" href="/">
+						<img src="{% static "img/logo_turkuaz.png"%}" height="60" width="100" alt="Logo">
+					</a>
+					<!-- End Logo -->
+				</div>
+
+
+				<!-- Topbar -->
+				{% include 'topbar.html' %}
+				<!-- End Topbar -->
+
+				<!-- Toggle get grouped for better mobile display -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<!-- End Toggle -->
+			</div><!--/end container-->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<!-- Home -->
+						<li class="headline ">
+							<a href="/bosnia-tours">
+								BOSNIA TOURS
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Pages -->
+						<li class="headline active">
+							<a href="/balkan-tours" >
+								BALKAN TOURS
+							</a>
+						</li>
+						<!-- End Pages -->
+
+						<!-- Portfolio -->
+						<li class="headline">
+							<a href="/alternatives" >
+								ALTERNATIVE TOURS
+							</a>
+						</li>
+						<!-- End Portfolio -->
+
+						<!-- Home -->
+						<li class="headline">
+							<a href="/cities">
+								CITIES
+							</a>
+						</li>
+						<!-- End Home -->
+
+						<!-- Features -->
+						<li class="headline">
+							<a href="/rentacar">
+								RENT-A-CAR
+							</a>
+						</li>
+						<!-- End Features -->
+					</ul>
+				</div><!--/end container-->
+			</div>
+			<!--/navbar-collapse-->
+
+		</div>
+		<!--=== End Header ===-->
+
+		<!--=== Content Part ===-->
+		<div class="container content">
+		{% include 'topsocialbar.html'%}
+
+			<div class="row blog-page">
+				<div class="popular-tours text-center g-heading-v8 " id="Popular-Tours">
+					<div class="container">
+						<h2 class="h2"> <strong>Adriatic Pearl</strong><br>tour</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row margin-bottom-20" style="text-align:center">
+				<div class="col-md-3 col-md-offset-3 col-sm-6" >
+					<!-- Orange Panel -->
+					<div class="panel panel-orange">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-eur"></i> Price</h3>
+						</div>
+						<div class="panel-body">
+							<p style="text-align:center">
+							From <b style="font-size:30px">450€</b>
+							</p>
+						</div>
+					</div>
+					<!-- End Orange Panel -->
+				</div>
+				<div class="col-md-3">
+					<!-- Orange Panel -->
+					<div class="panel panel-orange">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-calendar"></i> Duration</h3>
+						</div>
+						<div class="panel-body">
+							<p style="text-align:center">
+							<b style="font-size:30px">6</b>nights
+							<b style="font-size:30px">7</b>days
+							</p>
+						</div>
+					</div>
+					<!-- End Orange Panel -->
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Begin Sidebar Menu -->
+				{% include "tourleftsidebar.html" %}
+				<!-- End Sidebar Menu -->
+
+				<!-- Begin Content -->
+				<div class="col-md-10">
+					<ul class="timeline-v2">
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>1.Day</span>
+								<span>Ljubljana Old Town</span>
+								<span>New and Old Markets</span>
+								<span>Triple Bridge</span>
+								<span>Cobbler’s Bridge</span>
+								<span>Butcher’s Bridge</span>
+								<span>Town Hall Square</span>
+								<span>Baroque Robba Fountain</span>
+								<span>Cathedral of St. Nicholas</span>
+								<span>Metelkova Pogacarjev</span>
+								<span>Dragon Bridge</span>
+								<span>Boat ride on Ljubljanica River</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Ljubljana</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list1">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/bosnia-tours/sarajevo/slider900x600/annecocukaniti.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Ljubljana</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list1" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list1" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day1' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>2. Day</span>
+								<span>Bled Sightseeing tour</span>
+								<span>Bled church</span>
+								<span>Bled castle</span>
+								<span>Boat to the island</span>
+								<span>Tivali garden</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Bled</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list2">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/bosnia-tours/mostar/slider900x600/2Dunyasavasmuzesi.JPG"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Bled</p>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list2" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list2" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day2' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>3. Day</span>
+								<span>Kaptol and Gradec</span>
+								<span>Cathedral</span>
+								<span>Archbishop’s Palace</span>
+								<span>Ban Jelacic Square</span>
+								<span>Illusion museum</span>
+								<span>Saint Marco church</span>
+								<span>Funicular</span>
+								<span>Tkalciceva Street</span>
+								<span>Broken hearts museum</span>
+								<span>Glass workhsop/museum</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Zagreb</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list3">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/balkan-tours/montenegro/trebinje/slider900x600/klobukkiliesi.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Zagreb</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list3" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list3" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day3' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>4. Day</span>
+								<span>National Park Plitvice</span>
+								<span>Zadar walking tour</span>
+								<span>City gate</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Plivitce Lakes - Zadar</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list4">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/balkan-tours/montenegro/budva/slider900x600/azizstefan.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Plivitce Lakes - Zadar</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list4" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list4" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day4' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>5. Day</span>
+								<span>Split city tour</span>
+								<span>Diocletion's palace</span>
+								<span>Fish market-street</span>
+								<span>Marmontova Street</span>
+								<span>Live museum</span>
+								<span>Braç Island</span>
+								<span>Marjan hill</span>
+								<span>Riva street</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Split</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list5">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/balkan-tours/montenegro/podgoritsaostrog/slider900x600/podgorica-hercegovackacaddesi.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Split</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list5" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list5" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day5' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>6. Day</span>
+								<span>Dubrovnik city tour</span>
+								<span>Stradun Street</span>
+								<span>Little Onofrio Fountain</span>
+								<span>Great Onofrio Fountain</span>
+								<span>Bell Tower</span>
+								<span>Rector's Palace</span>
+								<span>St. Blaise Church</span>
+								<span>Sponza Palace</span>
+								<span>Franciscan Monastery</span>
+								<span>Cathedral</span>
+								<span>St. Savior Church</span>
+								<span>Orlando’s Column</span>
+								<span>Gundulica Square</span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Dubrovnik</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list6">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/balkan-tours/Kosova/pristine/slider900x600/pristina-iskenderbeymeydani.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Dubrovnik</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list6" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list6" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day6' %}
+							</div>
+						</li>
+						<li class="equal-height-columns">
+							<div class="cbp_tmtime equal-height-column">
+								<span>7. Day</span>
+								<span>Lokrum island</span>
+								<span>Banje beach </span>
+								<span></span>
+							</div>
+							<i class="cbp_tmicon rounded-x hidden-xs"></i>
+							<div class="cbp_tmlabel equal-height-column">
+								<h2>Dubrovnik</h2>
+								<div class="timeline-heading">
+										<div class="carousel slide carousel-v1" id="list7">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img class="img-responsive" src="{% static "img-temp/balkan-tours/Makedonya/uskup/slider900x600/uskup-ciftehamam.jpg"%}" alt=""/>
+													<div class="carousel-caption">
+														<p>Dubrovnik</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-arrow">
+												<a data-slide="prev" href="#list7" class="left carousel-control">
+													<i class="fa fa-angle-left"></i>
+												</a>
+												<a data-slide="next" href="#list7" class="right carousel-control">
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								<h4>Tour Plan</h4>
+								{% placeholder 'day7' %}
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- End Content -->
+			</div>
+		</div><!--/container-->
+		<!--=== End Content Part ===-->
+
+		<hr>
+
+
+		{% include 'footer.html' %}
+	</div><!--/wrapper-->
+
+	<!--=== Style Switcher ===-->
+	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+	<div class="style-switcher animated fadeInRight">
+		<div class="style-swticher-header">
+			<div class="style-switcher-heading">Style Switcher</div>
+			<div class="theme-close"><i class="icon-close"></i></div>
+		</div>
+
+		<div class="style-swticher-body">
+			<!-- Theme Colors -->
+			<div class="style-switcher-heading">Theme Colors</div>
+			<ul class="list-unstyled">
+				<li class="theme-default theme-active" data-style="default" data-header="light"></li>
+				<li class="theme-blue" data-style="blue" data-header="light"></li>
+				<li class="theme-orange" data-style="orange" data-header="light"></li>
+				<li class="theme-red" data-style="red" data-header="light"></li>
+				<li class="theme-light" data-style="light" data-header="light"></li>
+				<li class="theme-purple last" data-style="purple" data-header="light"></li>
+				<li class="theme-aqua" data-style="aqua" data-header="light"></li>
+				<li class="theme-brown" data-style="brown" data-header="light"></li>
+				<li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+				<li class="theme-light-green" data-style="light-green" data-header="light"></li>
+				<li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+				<li class="theme-teal last" data-style="teal" data-header="light"></li>
+			</ul>
+
+			<!-- Theme Skins -->
+			<div class="style-switcher-heading">Theme Skins</div>
+			<div class="row no-col-space margin-bottom-20 skins-section">
+				<div class="col-xs-6">
+					<button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
+				</div>
+				<div class="col-xs-6">
+					<button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Layout Styles -->
+			<div class="style-switcher-heading">Layout Styles</div>
+			<div class="row no-col-space margin-bottom-20">
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>
+				</div>
+				<div class="col-xs-6">
+					<a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Theme Type -->
+			<div class="style-switcher-heading">Theme Types and Versions</div>
+			<div class="row no-col-space margin-bottom-10">
+				<div class="col-xs-6">
+					<a href="E-Commerce/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="One-Pages/Classic/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">One Page <small class="dp-block">Template</small></a>
+				</div>
+			</div>
+
+			<div class="row no-col-space">
+				<div class="col-xs-6">
+					<a href="Blog-Magazine/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Blog <small class="dp-block">Template</small></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
+				</div>
+			</div>
+		</div>
+	</div><!--/style-switcher-->
+	<!--=== End Style Switcher ===-->
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/jquery/jquery-migrate.min.js"%}"></script>
+	<script type="text/javascript" src="{% static "plugins/bootstrap/js/bootstrap.min.js"%}"></script>
+	<!-- JS Implementing Plugins -->
+	<!--<script type="text/javascript" src="{% static "plugins/back-to-top.js"%}"></script>-->
+	<script type="text/javascript" src="{% static "plugins/smoothScroll.js"%}"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="{% static "js/custom.js"%}"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="{% static "js/app.js"%}"></script>
+	<script type="text/javascript" src="{% static "js/plugins/style-switcher.js"%}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			StyleSwitcher.initStyleSwitcher();
+		});
+	</script>
+	<!--[if lt IE 9]>
+    <script src="{% static "plugins/respond.js"%}"></script>
+    <script src="{% static "plugins/html5shiv.js"%}"></script>
+    <script src="{% static "plugins/placeholder-IE-fixes.js"%}"></script>
+  <![endif]-->
+{% endblock content %}

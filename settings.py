@@ -212,7 +212,13 @@ CMS_TEMPLATES = (
     ('dailytours.html', 'DailyTours'),
     ('8d7n-tour.html', '8d7n Tour'),
     ('12d11n-tour.html', '12d11n Tour'),
-    ('sms-tour.html', "SMS Tour")
+    ('sms-tour.html', "SMS Tour"),
+    ('venice-sarajevo.html', 'venice-sarajevo'),
+    ('green-blue-dream-adriatic.html', 'green-blue-dream-adriatic'),
+    ('fantastic-balkans.html', 'fantastic-balkans'),
+    ('bosnia-croatia.html', 'bosnia-croatia'),
+    ('adriatic-pearl.html', 'adriatic-pearl')
+
 )
 
 CMS_PERMISSION = True
