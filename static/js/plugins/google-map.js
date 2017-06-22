@@ -10,7 +10,7 @@ var GoogleMap = function () {
       initGoogleMap: function () {
 
         /* Map */
-        var fenway = {lat: 43.840581, lng: 18.320321};
+        var fenway = {lat: 43.84762, lng: 18.328114};
 
         var map = new google.maps.Map(document.getElementById('map'), {
           center: fenway,
@@ -35,7 +35,7 @@ var GoogleMap = function () {
         panorama = new google.maps.StreetViewPanorama(
           document.getElementById('pano1'),
           {
-            position: {lat: 43.840581, lng: 18.320321},
+            position: {lat: 43.84762, lng: 18.328114},
             pov: {heading: 165, pitch: 0},
             zoom: 1
           }
@@ -51,7 +51,7 @@ var GoogleMap = function () {
         panorama = new google.maps.StreetViewPanorama(
           document.getElementById('pano2'),
           {
-            position: {lat: 43.840581, lng: 18.320321},
+            position: {lat: 43.84762, lng: 18.328114},
             pov: {heading: 165, pitch: 0},
             zoom: 1
           }
